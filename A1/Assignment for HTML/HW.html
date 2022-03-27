@@ -149,21 +149,47 @@
     <iframe width="560" height="315" src="https://www.youtube.com/embed/P6fJWnSajtE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <br><br>
 <hr>
-
-    <h1 align="center" id="comment" >Leave a comment</h1>
-    <label for="Name">Name :</label>
-    <input type="text" name="stu_name" id="name" required placeholder="Name">
-    <br><br>
-    <label for="email">Email :</label>
-    <input type="email" name="stu_email" id="email" required placeholder="Email"> 
-    <br><br>
-    <label for="comment" align="right">Comment :</label>
-    <textarea name="stu_comment" id="" cols="30" rows="10"></textarea>
+<h1 align="center" id="comment" >Leave a comment</h1>
+<div align="center">
+    <form action="nothing.php" method="get">
+<table>
+    <tbody>
+      <tr>
+          <td>Name :</td>
       
+          <td>
+              <input type="text" name="stu_name" id="name" required placeholder="Name">
+          </td>
+      </tr>
+      <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+      </tr>
+      <tr>
+          <td>Email :</td>
+          <td>
+              <input type="email" name="stu_email" id="email" required placeholder="Email.com">
+          </td>
+      </tr>
+      <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+      </tr>
+      <tr>
+          <td>Comment :</td>
+          <td>
+              <textarea name="comment" cols="30" rows="10" placeholder="Comment Here"></textarea>
+          </td>
+      </tr>   
+</tbody>
+</table>
     <br><br>
-    <button type="submit">add</button>
-    <br><br>
+    <footer>
+        <button type="submit">Add</button>
+    </footer>
     <hr>
+</form>
+</div>
     <footer>
         <p>Aunghtethtet295810@gmail.com © Alright reserved.</p>
         <p>By Zackie</p>
