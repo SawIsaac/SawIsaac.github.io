@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Form Sign up</title>
+</head>
+<body>
+    <div class="container">
+
+            <div class="header">
+            <h2>Create Account</h2>
+            </div>
+
+    <form class="form" id="form">
+        <div class="form-control success">
+            <label>Username</label>
+            <input type="text" placeholder="username" id="username">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error massage</small>
+        </div>
+
+        <div class="form-control error">
+            <label>Email</label>
+            <input type="email" placeholder="email.com" id="email">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error massage</small>
+        </div>
+
+        <div class="form-control">
+            <label>Password</label>
+            <input type="password" placeholder="password" id="password">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error massage</small>
+        </div>
+
+        <div class="form-control">
+            <label>Password Check</label>
+            <input type="password" placeholder="Re-type the password" id="password2">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error massage</small>
+        </div>
+        <button>Sumbit</button>
+    </form>
+        
+    </div>
+
+    <script>
+        const form = document.getElementById('form');
+        const username = document.getElementById('uswername');
+        const email = document.getElementById('email');
+        const password = document.getElementById('password');
+        const password2 = document.getElementById('password2');
+
+        form.addEventListener('submit',(e) => {e.preventDefault();
+            checkInput();
+        })
+        function checkInput()
+        {//get the values from the inputs
+            const usernameValue = username.value.trim();
+            const emailValue = email.value.trim();
+            const passwordValue = password.value.trim();
+            const password2Value = password2.value.trim();
+
+            if(usernameValue === ''){
+                //show error
+                //add error class
+                setErrorFor(username, 'Username cannot be blank');
+            }
+            else{
+                //add success class
+                setSuccessFor(username);
+            }
+        }
+
+        function setErrorFor(input,message)
+        {
+            const formControl = input.parentElement; //.form-control
+            const small = formControl.querySelector('small');
+
+            //add error message inside small
+            smaill.innerText = message;
+
+            //add error class
+            formControl.ClassName = 'form-control error';
+        }
+    </script>
+</body>
+</html>
