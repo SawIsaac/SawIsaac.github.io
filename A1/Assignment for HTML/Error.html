@@ -1,96 +1,107 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    
-    <title>Form Sign up</title>
-</head>
-<body>
-    <div class="container">
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+     <title>Styling</title>
+ </head>
+ <body>
+     <h1 class="title">HELLO CSS</h1>
+     <br>
+     <p>-CSS stands for Cascading Style Sheets 
+         <br>
+        -CSS describes how HTML elements are to be displayed on screen, paper, or in other media <br>
+        -CSS saves a lot of work. It can control the layout of multiple web pages all at once <br>
+        -External stylesheets are stored in CSS files.
+     </p>
+     <hr>
+     <h1 class="subtitle">About CSS</h1>
+     <br>
+     <img src="../Assignment for HTML/image/CSSS.png" alt="CSS">
 
-            <div class="header">
-            <h2>Create Account</h2>
-            </div>
+     <br>
+     <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[2]
+        <br>
+        CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts] This separation can improve content accessibility; provide more flexibility and control in the specification of presentation characteristics; enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, which reduces complexity and repetition in the structural content; and enable the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.
+        <br><br>
+        Separation of formatting and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader), and on Braille-based tactile devices. CSS also has rules for alternate formatting if the content is accessed on a mobile device.[4]
+        <br><br>
+        The name cascading comes from the specified priority scheme to determine which style rule applies if more than one rule matches a particular element. This cascading priority scheme is predictable.
+        <br><br>
+        The CSS specifications are maintained by the World Wide Web Consortium (W3C). Internet media type (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998). The W3C operates a free CSS validation service for CSS documents.[5]
+        <br><br>
+        In addition to HTML, other markup languages support the use of CSS including XHTML, plain XML, SVG, and XUL.</p>
+        <br>
+        <hr>
+        <br>
+        <h3>
+            <ul>
+                <li>Flexibility</li>
+                <li>Style</li>
+                <li>Animation</li>
+            </ul>
+        </h3>
+        <br>
+        <h1>Service</h1>
+        <br>
 
-    <form class="form" id="form">
-        <div class="form-control success">
-            <label>Username</label>
-            <input type="text" placeholder="username" id="username">
-            <i class="fas fa-check-circle"></i>
-            <i class="fas fa-exclamation-circle"></i>
-            <small>Error massage</small>
-        </div>
+        <table border="1" cellspacing="0" cellpadding="10">
+            <thead>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Size</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>IZ</td>
+                    <td>20</td>
+                    <td>Fatty</td>
+                </tr>
+                <tr>
+                    <td>Jashua</td>
+                    <td>16</td>
+                    <td>slim</td>
+                </tr>
+                <tr>
+                    <td>Daddy</td>
+                    <td>40+</td>
+                    <td>fatty</td>
+                </tr>
+                <tr>
+                    <td>Mommy</td>
+                    <td>40+</td>
+                    <td>Fatty</td>
+                </tr>
+                <tr>
+                    <td>GrandM/D</td>
+                    <td>80+</td>
+                    <td>skinny</td>
+                </tr>
+                <tr>
+                    <td>Aunt and Uncle</td>
+                    <td>50+</td>
+                    <td>Fat nor thin</td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br>
+        <hr>
+        <br>
+        <img src="image/island.jpg" alt="island" width="450" height="300">
+        <br><br>
+        <h1 id="contact">Contact US</h1>
+        <form action="">
+        <label for="name">Name</label>
+        <input type="text">
+        <label for="gmail">Gmail</label>
+        <input type="gmail">
+        <label for="comment">Comment</label>
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
 
-        <div class="form-control error">
-            <label>Email</label>
-            <input type="email" placeholder="email.com" id="email">
-            <i class="fas fa-check-circle"></i>
-            <i class="fas fa-exclamation-circle"></i>
-            <small>Error massage</small>
-        </div>
+        <button>submit</button>
+        </form>
 
-        <div class="form-control">
-            <label>Password</label>
-            <input type="password" placeholder="password" id="password">
-            <i class="fas fa-check-circle"></i>
-            <i class="fas fa-exclamation-circle"></i>
-            <small>Error massage</small>
-        </div>
-
-        <div class="form-control">
-            <label>Password Check</label>
-            <input type="password" placeholder="Re-type the password" id="password2">
-            <i class="fas fa-check-circle"></i>
-            <i class="fas fa-exclamation-circle"></i>
-            <small>Error massage</small>
-        </div>
-        <button>Sumbit</button>
-    </form>
-        
-    </div>
-
-    <script>
-        const form = document.getElementById('form');
-        const username = document.getElementById('uswername');
-        const email = document.getElementById('email');
-        const password = document.getElementById('password');
-        const password2 = document.getElementById('password2');
-
-        form.addEventListener('submit',(e) => {e.preventDefault();
-            checkInput();
-        })
-        function checkInput()
-        {//get the values from the inputs
-            const usernameValue = username.value.trim();
-            const emailValue = email.value.trim();
-            const passwordValue = password.value.trim();
-            const password2Value = password2.value.trim();
-
-            if(usernameValue === ''){
-                //show error
-                //add error class
-                setErrorFor(username, 'Username cannot be blank');
-            }
-            else{
-                //add success class
-                setSuccessFor(username);
-            }
-        }
-
-        function setErrorFor(input,message)
-        {
-            const formControl = input.parentElement; //.form-control
-            const small = formControl.querySelector('small');
-
-            //add error message inside small
-            smaill.innerText = message;
-
-            //add error class
-            formControl.ClassName = 'form-control error';
-        }
-    </script>
-</body>
-</html>
+ </body>
+ </html>

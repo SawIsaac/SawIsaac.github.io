@@ -1,0 +1,15 @@
+.margin{
+    text-align: center;
+    border: 100px solid rgb(226, 215, 215);
+    margin: 100px;
+}
+
+.marginone{
+    border: 1px solid red;
+    margin-right: 100px;
+}
+
+.padding{
+    border: 1px solid green;
+    padding: 40px;
+}
