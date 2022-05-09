@@ -1,0 +1,12 @@
+.online{
+    font-family: 'Roboto Mono', monospace;
+}
+
+@font-face{
+    src: url(image/RobotoMono-Bold.ttf);
+    font-family: robot;
+}
+
+.offline{
+    font-family: robot;
+}
