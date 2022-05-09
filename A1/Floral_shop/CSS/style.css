@@ -328,9 +328,11 @@ input[type="text"],input[type="email"]{
     
 }
 #downarrow{
+    color: red;
     margin-left: 45%;
     position: relative;
     top: -150px;
+   
 }
 .history2{
     background-color: #e1ecee;
