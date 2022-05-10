@@ -314,6 +314,11 @@ input[type="text"],input[type="email"]{
     border-radius: 10px;
 }
 
+.aboutheadtitle p{
+ padding: 10px 20px;
+ text-align: justify;
+}
+
 .history{
     background-color: #e1ecee;
     text-align: center;
@@ -327,6 +332,21 @@ input[type="text"],input[type="email"]{
     border-radius: 10px;
     
 }
+
+.history p{
+    padding: 10px 20px;
+    text-align: justify;
+}
+
+.history2 p{
+    padding: 10px 20px;
+    text-align: justify;
+}
+
+.backgroundcolorofabouthistory{
+    background-color: #4a7fb3;
+}
+
 #downarrow{
     margin-left: 45%;
     position: relative;
@@ -434,6 +454,11 @@ input[type="text"],input[type="email"]{
     margin-top: 20px;
     position: relative;
     border-radius: 10px;
+}
+
+.blog1 p{
+    text-align: justify;
+    padding: 0px 15px;
 }
 
 .blog1 small{
