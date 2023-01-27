@@ -1,9 +1,0 @@
-/* descendent */
-.desc a{
-color: red;
-}
-
-/* Child selector */
-.child > a{
-    color: red;
-}
