@@ -1,0 +1,25 @@
+/* BORDER */
+.borderone{
+    border: 2px solid yellow;
+
+}
+
+.bordertwo{
+    border-left: 5px solid red;
+    border-bottom: 2px dashed yellow;
+
+}
+
+.borderwidth{
+    border-width: 1px;
+    border-style: solid;
+}
+
+.borderstyle{
+    border-style: solid;
+}
+
+.bordermix{
+    border-style: solid double dashed dotted;
+    /* work as clockwise direction like (top,right,bottom,left) */
+}

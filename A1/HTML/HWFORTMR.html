@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caculator</title>
+</head>
+<style>
+    small{
+        color: red;
+    }
+    .error{
+        border-color: red;
+    }
+</style>
+    <h1>Caculator</h1>
+   
+      
+            <form action="">
+                  <div>
+                    <label for="name">Name :</label>
+                    <input type="text" id="name" name="name" required placeholder="Name">
+                    <small id="name2_error"></small>
+                  </div>
+                  <br>
+                  <div>
+                    <label for="age">Age :</label>
+                    <input type="number" id="age" name="age" required placeholder="Age">
+                    <small id="age2_error"></small>
+                  </div>
+                  <br>
+                 <div>
+                    <label for="birth">Birth-date :</label>
+                    <input type="date" id="birth" name="birth">
+                    <small id="birth2_error"></small>
+                 </div>
+                  <br>
+                  <div>
+                      <label for="email">Email :</label>
+                      <input type="email" id="email" name="email" required placeholder="@gmail.com">
+                      <small id="email2_error"></small>
+                  </div>
+                  <br>
+                <div>
+                    <label for="address">Address :</label>
+                    <input type="text" id="address" name="address" required placeholder="Address">
+                    <small id="address2_error"></small>
+                </div>
+                  <br>
+                <button type="button" onclick="add()">Add</button>
+
+            </form>
+            <table border="1" cellspacing="0" cellpadding="10">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Birth-date</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+    
+            <script>
+                function formValidation()
+                {
+                let name1 = document.querySelector('#name').value;
+                let age1 = document.querySelector('#age').value;
+                let birth_date1 = document.querySelector('#birth').value;
+                let email1 = document.querySelector('#email').vlaue;
+                let address1 = document.querySelector('#address').value;
+
+                let nameone = document.querySelector('#name');
+                let ageone = document.querySelector('#age');
+                let birth_dateone = document.querySelector('#birth');
+                let emailone = document.querySelector('#email');
+                let addressone = document.querySelector('#address');
+
+                let name_error = document.querySelector('#name2_error');
+                let age_error = document.querySelector('#age2_error');
+                let birth_date_error = document.querySelector('#birth2_error');
+                let email_error = document.querySelector('#email2_error');
+                let address_error = document.querySelector('#address2_error');
+
+                if(name1 =='' || age1 =='' || birth_date1 == '' || address == '')
+            {
+                    nameone.removeAttribute('class');
+                    ageone.removeAttribute('class');
+                    birth_dateone.removeAttribute('class');
+                    emailone.removeAttribute('class');
+                    addressone.removeAttribute('class'); 
+                    
+                    name_error.innerHTML = '';
+                    age_error.innerHTML = '';
+                    birth_date_error.innerHTML = '';
+                    email_error.innerHTML = '';
+                    address_error.innerHTML = '';
+                    if(name1=='')
+                    {
+                        showError(name_error,nameone,'Name is Require');
+                    }
+                    if(age1 = '')
+                    {
+                        showError(age_error,ageone,'Age is Require');
+                    }
+                    if(birth_date1 = '')
+                    {
+                        showError(birth_date_error,birth_dateone,'Birth-date is Require');
+                    }
+                    if(email1 = '')
+                    {
+                        showError(email_error,emailone,'Email is Require');
+                    }
+                    if(address1 = '')
+                    {
+                        showError(address_error,addressone,'Address is Require');
+                    } 
+                    function showError(numError,numInput,message){
+                    console.log(numError,numInput,message);
+                    numError.innerHTML = message;
+                    numInput.setAttribute('class','error')
+                    }
+                }
+                else
+                {
+                nameone.removeAttribute('class');
+                ageone.removeAttribute('class');
+                birth_dateone.removeAttribute('class');
+                emailone.removeAttribute('class');
+                addressone.removeAttribute('class');
+                name_error.innerHTML = '';
+                age_error.innerHTML = '';
+                birth_date_error.innerHTML = '';
+                email_error.innerHTML = '';
+                address_error.innerHTML = '';
+                return {nameone,ageone,birth_dateone,emailone,addressone}
+                }
+
+            }
+                
+               
+
+                    let data = '';
+                    let n = 1;
+                function add()
+                {  let content = formValidation();
+                   console.log(content);
+                    if(content){
+                    let name = document.querySelector('#name').value;
+                    console.log(name);
+                    let age = document.querySelector('#age').value;
+                    console.log(age);
+                    let birth_date = document.querySelector('#birth').value;
+                    console.log(birth_date);
+                    let email = document.querySelector('#email').value;
+                    console.log(email);
+                    let address = document.querySelector('#address').value;
+                    console.log(address);
+                 
+                    data += `<tr>
+                        <td>${n++}</td>
+                        <td>${name}</td>
+                        <td>${age}</td>
+                        <td>${birth_date}</td>
+                        <td>${email}</td>
+                        <td>${address}</td>
+                        </tr>`
+
+                    let result = document.querySelector('#tbody');
+                    result.innerHTML = data;
+                    }
+                }
+            </script>
+    
+    <table>
+        <thead>
+                
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <script>
+
+    </script>
+</body>
+</html>

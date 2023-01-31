@@ -1,0 +1,20 @@
+h1 {
+    padding-top: 80px;
+    text-align: center;
+    color: aqua;  
+}
+
+p {
+    font-style: italic;
+}
+
+.biography {
+    color: red;
+}
+
+.border {
+    width: auto;
+    height: 200px;
+    background-color: black;
+}
+

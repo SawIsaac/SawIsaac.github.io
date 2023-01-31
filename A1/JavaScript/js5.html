@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let firstname = "Saw Isaac";
+        let lastname = "Htoo";
+        console.log(typeof(firstname));
+        console.log(typeof(lastname));
+        console.log(firstname.length);
+        console.log(lastname.length);
+        let fullname = firstname.concat(' ',lastname);
+        console.log(fullname);
+        console.log("My name is "+fullname);
+        console.log(fullname[5]);
+        console.log(fullname.toLocaleUpperCase());
+        console.log(fullname.toLocaleLowerCase());
+        console.log(fullname.substr(10,4));
+
+        let welcome = ' Welcome to my class ';
+        console.log(welcome.trim());
+        let ser = 'Java is funny';
+        let res = ser.search('is');
+        console.log(res);
+
+        let rep = 'i want to visit Yangon';
+        let rep_result=rep.replace('Yangon','Mandalay');
+        console.log(rep_result)
+
+        console.log(`My name is ${fullname}`);
+    </script>
+</body>
+</html>
