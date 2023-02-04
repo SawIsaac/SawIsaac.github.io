@@ -1,0 +1,9 @@
+/* descendent selector */
+#desc a{
+    color: red;
+}
+
+/* child selector */
+#child>a{
+    color: green;
+}

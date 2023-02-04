@@ -1,0 +1,18 @@
+a{
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover{
+    color: red;
+    text-decoration: line-through;
+    
+}
+
+a:active{
+    color: green;
+}
+
+a:visited{
+    color: yellow;
+}

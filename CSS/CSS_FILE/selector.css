@@ -1,0 +1,22 @@
+/* tag / element selector */
+h1{
+    color: pink;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+/* Universal selector */
+* {
+    color: red;
+    background-color: black;
+}
+
+/* attribute selector */
+a[title="google"] {
+    color: white;
+}
+
+a[title="coinpayyou"]{
+    color: blueviolet;
+}

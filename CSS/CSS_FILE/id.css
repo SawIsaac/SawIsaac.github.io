@@ -1,0 +1,12 @@
+.idselector {
+    font-size: 50px;
+}
+
+.classselector{
+    color: brown;
+    letter-spacing: 10px;
+    word-spacing: 30px;
+    line-height: 40px;
+    text-transform: capitalize;
+    
+}
