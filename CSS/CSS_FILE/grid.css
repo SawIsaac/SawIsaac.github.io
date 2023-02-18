@@ -1,0 +1,29 @@
+.gridone div,.gridtwo div,.gridthree div,.gridfour div{
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.gridone,.gridthree,.gridfour{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.gridtwo{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* grid-column-gap: 40px;
+    grid-row-gap: 40px; */
+    grid-gap: 40px;
+}
+
+.columadd{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.rowadd{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}

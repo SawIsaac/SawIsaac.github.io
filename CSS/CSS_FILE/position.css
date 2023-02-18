@@ -1,0 +1,36 @@
+.relative_parent{
+    border: 1px solid black;
+    width: 1000px;
+    height: 500px;
+}
+
+.relative{
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 100px;
+    left: 200px;
+}
+
+.absolute_parent{
+    border: 1px solid brown;
+    width: 1000px;
+    height: 500px;
+    position: relative;
+}
+
+.absolute{
+    border: 1px solid  yellow;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.fixed_parent{
+    position: fixed;
+    top: 100px;
+    right: 200px;
+}

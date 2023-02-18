@@ -1,0 +1,37 @@
+body{
+    width: 50%;
+    margin: auto;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    text-align: center;
+    color: green;
+}
+
+.marginone{
+    border: 1px solid red;
+    /* margin: 40px {all four}*/
+    /* margin: 30px 50px; {T&B/ L&R} */
+    /* margin: 100px 30px 50px; {T/ L&R/ B} */
+    margin: 30px 50px 60px 70px; /*{T/ R/ B/ L}*/
+}
+
+.margintwo{
+    margin-top: 50px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    border: 1px solid green;
+
+}
+
+.padding{
+    border: 3px solid brown;
+    padding: 100px 100px 100px 100px;
+}
+

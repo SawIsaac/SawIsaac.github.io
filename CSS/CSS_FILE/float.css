@@ -1,0 +1,17 @@
+.float_left img{
+    width: 450px;
+    height: 350px;
+    float: left;
+    border-radius: 10px;
+}
+
+.clear{
+    clear: both;
+}
+
+.float_right img{
+    width: 450px;
+    height: 350px;
+    float: right;
+    border-radius: 10px;
+}

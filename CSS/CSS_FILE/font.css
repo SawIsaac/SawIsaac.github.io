@@ -1,0 +1,11 @@
+/*   */
+
+@font-face {
+    font-family: dancingScript;
+    src: url('../FONTS/DancingScript-Regular.ttf');
+}
+
+.offline{
+    font-family: dancingScript;
+    font-size: 40px;
+}

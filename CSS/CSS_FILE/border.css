@@ -1,0 +1,29 @@
+body{
+    width: 50%;
+    margin: auto;
+}
+.borderone{
+    border: 20px dotted green;
+}
+
+.bordertwo{
+    border-bottom: 5px solid red;
+    border-top: 2px dotted green;
+}
+
+.borderstyle{
+    /* border-style: solid dotted; {top and bottom/ left and right} */
+    /* border: solid;  {all four T/ R/ B/R } */
+    /* border-style: solid dotted double; {Top / Left and right / Bottom} */
+    border-style: dashed solid dotted double; /*{Top Rright Bottom Left} */
+}
+
+.bordercolor{
+    border-style: solid;
+     border-color: brown green; /*left and right */
+} /*cant withstand alone have to combine with (border-style) */
+
+.borderwidth{
+    border-style: solid;
+    border-width: 20px;
+}
