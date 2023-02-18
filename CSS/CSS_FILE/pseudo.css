@@ -16,3 +16,9 @@ a:active{
 a:visited{
     color: yellow;
 }
+
+/* target */
+p:target{
+    color: green;
+    border: 1px solid red;
+}
