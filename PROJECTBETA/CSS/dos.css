@@ -12,7 +12,7 @@
  /* navigation start */
 .navigation{
     background-color: #252839;
-    box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 30px 10px rgba(0, 0, 0, 1);
 }
 
 .navigation div{
@@ -75,7 +75,7 @@
     margin-left: 40px;
     border: 1px solid black;
     padding: 25px;
-    border-radius: 5px;
+    border-radius: 25px 25px 25px 25px;
     background-color: #EAEEFF;
     transition: 1s;
 }
@@ -86,27 +86,17 @@
     cursor: pointer;
 }
 
-/* navigation end */
-
-/* bunner start */
-.bunner{
-
-}
-
-.bunner h1{
-  color: white;
-}
-
 .search_parent{
-    padding: 1px;
-    overflow: hidden;
+  position: absolute;
+  left: 200px;
+  top: 50px;
 }
 
 .search{
-    width: 30px;
+    width: 45px;
     border: 1px solid transparent;
     transition: 1s;
-    border-radius: 50px 50px 50px 50px;
+    border-radius: 30px 30px 30px 30px;
     padding: 5px;
     height: 30px;
     border-color: transparent;
@@ -116,5 +106,91 @@
     outline: none;
     width: 400px;
 }
+/* navigation end */
+
+/* bunner start */
+.bunner img{
+    width: 100%;
+    margin-top: 5px;
+    position: relative;
+    display: block;
+}
+
+.bunner_text{
+    position: absolute;
+    top: 400px;
+    border: 1px solid black;
+    width: 1000px;
+    color: white;
+    margin-left: 200px;
+    font-size: 2em;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 1);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 1);
+    padding: 40px;
+}
+
+.bunner_text h1{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.bunner_button1,.bunner_button2{
+    color: white;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 1);
+    border: 1px solid #BFFCFC;
+    border-radius: 35px;
+    font-weight: bold;
+    padding: 30px;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    background-color: transparent;
+    
+    transition: 1s ease;
+}
+
+.bunner_button1:hover,.bunner_button2:hover{
+    background-color: #3F4564;
+    color: skyblue;
+    cursor: pointer;
+}
+
+/* bunner end */
+
+/* footer start */
+.footer_parent{
+
+}
+
+.footer{
+    background-color: #252839;
+    border: 1px solid white;
+    border-radius: 10px 20% 10px 20%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 1);
+}
+
+.footer_img{
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.5);
+    border-radius: 10px 80% 10px 80%;
+}
+
+.footer_imgtext{
+    color: white;
+    position: absolute;
+    top: 163%;
+    left: 150px;
+    padding: 5px;
+}
+
+
+
+
+
+
+
 
 
