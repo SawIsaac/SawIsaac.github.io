@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cabin;
+}
+
+@font-face {
+    font-family: cabin;
+    src: url('../Cabinfont/static/Cabin/Cabin-Regular.ttf');
+}
+
+ /* navigation start */
+.navigation{
+    background-color: #252839;
+    box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navigation div{
+    display: inline-block;
+}
+
+.navigation img{
+    width: 150px;
+    height: 150px;
+}
+
+.navigation ul{
+    margin-right: 300px;
+    margin-top: 50px;
+    display: flex;
+    float: right;
+    gap: 20px;
+    position: relative;
+}
+
+.navigation ul li{
+    display: inline-block;
+    position: relative;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    position: relative;
+    /* line-height: 1em; */
+    font-size: 2em;
+    letter-spacing: 2px;
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+}
+
+.navigation ul li a::before{
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 3px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+}
+
+.navigation ul li a:hover::before{
+    width: 100%;
+}
+
+.nav_button_parent{
+    position: absolute;
+    left: 85%;
+    top: 35px;
+}
+
+.nav_button{
+    font-weight: bolder;
+    margin-left: 40px;
+    border: 1px solid black;
+    padding: 25px;
+    border-radius: 5px;
+    background-color: #EAEEFF;
+    transition: 1s;
+}
+
+.nav_button:hover{
+    color: white;
+    background-color: #3F4564;
+    cursor: pointer;
+}
+
+/* navigation end */
+
+/* bunner start */
+.bunner{
+
+}
+
+.bunner h1{
+  color: white;
+}
+
+.search_parent{
+    padding: 1px;
+    overflow: hidden;
+}
+
+.search{
+    width: 30px;
+    border: 1px solid transparent;
+    transition: 1s;
+    border-radius: 50px 50px 50px 50px;
+    padding: 5px;
+    height: 30px;
+    border-color: transparent;
+}
+
+.search:focus{
+    outline: none;
+    width: 400px;
+}
+
+

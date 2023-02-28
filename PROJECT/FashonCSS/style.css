@@ -14,7 +14,7 @@
 
 /* nav */
 .nav{
-    background-color: black;
+    background-color: white;
     box-shadow: 10px 30px 10px rgb(0, 0, 0, 0.1);
     width: 100%;
 }
@@ -44,11 +44,11 @@ display: inline-block;
 
 .nav ul li a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .nav ul li a:hover{
-    color: antiquewhite;
+    color: red;
     cursor: pointer;
 }
 
@@ -237,7 +237,7 @@ color: grey;
 .arrival_iteam:hover .newbutton{
     opacity: 1;
 }
-
+ 
 .new_arrival div img:hover{
     opacity: 0.6;
 }
@@ -337,4 +337,13 @@ color: grey;
 .new_start img:hover{
     transform: scale(1.2);
     
+}
+
+/* new start end */
+
+.backgroundfoto{
+
+    background: url("../image/logo2re.png");
+    width: 100%;
+    background-size: cover;
 }
