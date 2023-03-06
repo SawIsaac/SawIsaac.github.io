@@ -164,6 +164,7 @@
 }
 
 .footer{
+    
     background-color: #252839;
     border: 1px solid white;
     border-radius: 10px 20% 10px 20%;
@@ -171,8 +172,6 @@
 }
 
 .footer_img{
-    display: inline-block;
-    position: relative;
     background-color: transparent;
     box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.5);
     border-radius: 10px 80% 10px 80%;
@@ -185,6 +184,14 @@
     left: 150px;
     padding: 5px;
 }
+
+
+.footer_parent{
+   display: grid;
+   grid-gap: 50px;
+}
+
+
 
 
 

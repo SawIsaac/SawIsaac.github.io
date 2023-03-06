@@ -232,7 +232,7 @@ color: grey;
     background-color: red;
     color: white;
     cursor: pointer;
-}
+} 
 
 .arrival_iteam:hover .newbutton{
     opacity: 1;
