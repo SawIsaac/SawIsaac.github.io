@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.contact-main{
+    background-color: #dee3df;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+}
+
+.contact-title{
+    flex-basis: 100%;
+    flex: 1;
+    margin-left: 40px;
+    margin-top: 50px;
+    padding-bottom: 40px;
+}
+
+.contact-widget{
+    padding-top: 80px;
+    background-color: #FAF5E9;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-location{
+    overflow: hidden;
+    border-radius: 50px;
+    padding-top: 10px;
+    margin-left: 40px;
+    box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-location iframe{
+    height: 100%;
+}
+
+
+.contact-user-info{
+    color: #009B4D;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 600px;
+    border: 1px solid black;
+    border-radius: 50px;
+    box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.2);
+    padding: 50px;
+}
+
+
+.contact-user-info label{
+    margin-top: 20px;
+}
+
+.contact-user-info input{
+    padding: 7px;
+    width: 400px;
+    margin-top: 10px;
+}
+
+.contact-user-info-send{
+    width: 100px;
+    text-align: center;
+    margin-top: 40px;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    background-color: #009B4D;
+    transition: 0.5s;
+}
+
+.contact-user-info textarea{
+    margin-top: 10px;
+}
+
+.contact-user-info-send:hover{
+    box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.2);
+    background-color: #f1f1f1;
+}
+
+/* .contact-icon{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    width: 100;
+}
+
+.contact-inner-icon{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.contact-inner-icon div p{
+    margin-top: 10px;
+}
+
+.contact-inner-icon div{
+    width: 25%;
+}
+
+.contact-inner-inner-icon{
+    display: flex;
+    width: 100%;
+}
+
+.contact-inner-icon div{
+    text-align: center;
+}
+
+.contact-icon2{
+    display: flex;
+    width: 100%;
+}
+
+.contact-icon2 div{
+    margin: 0 auto; 
+}
+
+#facebook,#instagram,#twitter,#reddit{
+    padding: 10px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+

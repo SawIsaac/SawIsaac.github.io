@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.checked {
+    color: orange;
+}
+
+.page-title{
+    width: 100%;
+    height: auto;
+    background-color: #1e1b1b;
+    padding: 20px;
+    color: #009B4D;
+    font-weight: bold;
+}
+
+.page-title h1{
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.last-link{
+    color: #FAF5E9;
+    font-weight: lighter;
+}
+
+
+.course-lists {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    background-color: #dee3df;
+    padding-bottom: 50px;
+}
+
+.course{
+    border: 1px solid #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, .4);
+    background-color: #FAF5E9;
+}
+
+.course-assets{
+    border-start-start-radius: 20px;
+    overflow: hidden;
+}
+
+.course-assets img{
+    width: 100%;
+    height: 200px;
+}
+
+.card-content{
+    padding-inline: 10px;
+    padding-block: 10px;
+}
+
+.course .card-content .card-title{
+    text-align: left;
+    font-size: 25px;
+    color: #009B4D;
+}
+
+.course .card-content .rating{
+    margin-block: 5px;
+    color: orange;
+}
+
+.course .card-content .secondary-title{
+    font-weight: lighter;
+    color: #181717;
+}
+
+.course-review{
+    min-height: 200px;
+    padding: 5px 16px;
+}
+
+.course-review ul{
+    list-style: square;
+    color: #6c6c6c;
+}
+
+.course-review ul li{
+    padding: 2px;
+    font-size: 13px;
+}
+
+.commertial-btn{
+    width: 100%;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 5px;
+}
+
+.commertial-btn span{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.commertial-btn span del{
+    font-weight: lighter;
+}
+
+.commertial-btn a{
+    padding: 10px 10px;
+    padding-bottom: 10px !important;
+    border-radius: 4px;
+    color: #FAF5E9;
+    text-decoration: none;
+    background-color: #009B4D;
+    transition: 0.5s;
+    font-size: 15px;
+}
+
+.commertial-btn a:hover{
+    color: #FAF5E9;
+    background-color: #02341b;
+    transition: 0.5s;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,76 @@
+Green (#009B4D), tangerine yellow (#FFCC00), ivory (#FAF5E9)
+container (#FAF5E9)
+small text (#6c6c6c)
+button = yellow
+
+<!-- <i class="fa-brands fa-facebook fa-2x"></i> -->
+ <!-- <i class="fa-brands fa-instagram fa-2x"></i> -->
+<!-- <i class="fa-brands fa-twitter fa-2x"></i> -->
+ <!-- <i class="fa-brands fa-reddit fa-2x"></i> -->
+
+<div class="blog1">
+                <div class="inner-text-blog1">
+                    <h3>Effective Online Course</h3>
+                    <p>Online courses have become a popular and effective way to learn and develop new skills. However, creating an online course can be a daunting task, especially if you're new to the process. In this blog post, we'll explore some tips and strategies for creating an effective online course that engages your audience and delivers real value.</p>
+                </div>
+                <div class="inner-img-blog1">
+                    <img src="../images/blog1.jpg" alt="">
+                </div>    
+            </div>
+
+<div class="blog2">
+                <div class="inner-img-blog2">
+                    <img src="../images/blog1.jpg" alt="">
+                </div>
+                <div class="inner-text-blog2">
+                    <h3>5 tips for Choosing the Right Online Courses for you</h3>
+                    <p> Online courses have become increasingly popular as more people turn to remote learning. However, with so many online courses available, it can be overwhelming to choose the right one for your needs. In this blog post, we'll explore some tips for choosing the right online course that meets your learning goals and fits your schedule.</p>
+                </div>
+                
+            </div>
+
+<div class="blog3">
+                <div class="inner-text-blog3">
+                    <h3> Creating a Stunning Website with "Dream Of Star", An Online Course</h3>
+                    <p>HTML and CSS are essential tools for creating beautiful and functional websites. However, learning these programming languages can be intimidating for beginners. In this blog post, we'll explore an online course that teaches HTML and CSS from the ground up, helping you create stunning websites with ease.</p>
+                </div>
+                <div class="inner-img-blog3">
+                    <img src="../images/blog1.jpg" alt="">
+                </div>
+            </div>
+
+<div class="blog4">
+                <div class="inner-img-blog4">
+                </div>
+                <div class="inner-blog4">
+                    <h3>A comprehensive curriculum</h3>
+                    <p>The online course covers all the basics of HTML and CSS, including document structure, tags, selectors, styling, and responsive design. The curriculum is designed to be beginner-friendly, with clear explanations and hands-on exercises.</p>
+                    <p>The online course offers interactive learning experiences that help you apply what you've learned in real-world scenarios. You'll have access to interactive code editors, quizzes, and challenges that test your understanding of the concepts.</p>
+                </div>
+            </div>
+
+<div class="blog5">
+                <div class="inner-text-blog5">
+                    <h3>Expert instruction</h3>
+                    <p>Taught by expert instructors with years of experience in web development. You'll receive personalized feedback on your work, and have the opportunity to ask questions and get support from the instructors and community.</p>
+                </div>
+            </div>
+
+<div class="blog6">
+                <div class="inner-blog6">
+                    <h3>Flexible learning & Real-world projects</h3>
+                    <p>Flexible learning  is self-paced, meaning you can learn at your own speed and on your own schedule. You can access the course materials and assignments from anywhere with an internet connection with ONLINE COURSES from "Dream Of Star"</p>
+                    <p> Real-world project culminates in a final project that allows you to showcase your skills and create a stunning website from scratch. You'll apply all the concepts you've learned throughout the course, and receive feedback on your work.</p>
+                </div>
+
+ <div class="ender">
+                <h3>Why You Should Choose Our Online Course Platform</h3>
+                <p>Flexible</p>
+                <p>Various kind of categories</p>
+                <p>Fair amount costs to learn from online</p>
+                <p>The best place for self-studying and self improvemnt</p>
+                <p>Anything you want to know shall be granted</p>
+            </div>
+
+            
+            
