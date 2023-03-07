@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Result</title>
+</head>
+<body>
+    <form action="myForm">
+        <label for="name">Name</label>
+        <input type="text" id="name">
+        <label for="myanmar">Myanmar</label>
+        <input type="number" id="myanmar2">
+        <label for="english">English</label>
+        <input type="number" id="englsih">
+        <label for="math">English</label>
+        <input type="number" id="math">
+        <label for="physic">Physic</label>
+        <input type="number" id="physic">
+        <label for="chemistry">Chemistry</label>
+        <input type="number" id="chemistry">
+        <label for="bio">Bio</label>
+        <input type="number" id="bio">
+        <br>
+        <button type="button" onclick='result()'>Sumbit</button>
+    </form>
+    <script>
+        function result(){
+           let name = document.myForm.name.values;
+           let myanmar = document.myForm.myanmar.value;
+           let english = document.myForm.english.value;
+           let math = document.myForm.math.value;
+           let physic = document.myForm.physic.value;
+           let chemistry = document.myForm.chemistry.value;
+           let bio = document.myForm.bio.value;
+
+            if(myanmar >= 40 || english >=40 || math >=40 || physic >=49 || chemistry >=40 || bio >=40){
+              Console.writeln("You are pass");
+            }
+            else{
+                COnsloe.writeln("You are fail");
+            }
+        }
+    </script>
+</body>
+</html>
