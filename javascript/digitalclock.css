@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.digitalclock{
+    border: 100px solid black;
+    padding: 30px;
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+    border-radius: 100px;
+    height: 150px;
+}
+
+.digitalclock span{
+    font-size: 10em;
+    font-weight: bold;
+    color: red;
+}

@@ -7,9 +7,9 @@
     <title>Exam Result</title>
 </head>
 <body>
-    <form action="myForm">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name">
+    <form name="myForm">
+        <label for="username">Name</label>
+        <input type="text" id="name" name="username">
         <label for="myanmar">Myanmar</label>
         <input type="number" id="myanmar" name="myanmar">
         <label for="english">English</label>
@@ -34,14 +34,35 @@
            let physic = document.myForm.physic.value;
            let chemistry = document.myForm.chemistry.value;
            let bio = document.myForm.bio.value;
-
-            if(myanmar >= 40 || english >=40 || math >=40 || physic >=49 || chemistry >=40 || bio >=40){
-              Console.writeln("You are pass");
-            }
-            else{
-                COnsloe.writeln("You are fail");
-            }
-        }
+           
+           if(myanmar >= 40 && english >= 40 && math >= 40 && physic >= 40 && chemistry >= 40 && bio >= 40){
+                document.write("<h1>You pass.</h1>")
+                if(myanmar >=80 && english >=80 && math >=80 && physic >=80 && chemistry >=80 && bio >=80){
+                    document.write("<h1>You Pass with all Destination</h1>")
+                   }
+                   else if(myanmar >=80 && english >=80 && math >=80 && physic >=80 && chemistry >=80){
+                       document.write("<h1>You Pass with Myanmar, English, Math, Physic and Chemistry Destination</h1>")
+                   }
+                   else if(myanmar >=80 && english >=80 && math >=80 && physic >=80){
+                    document.write("<h1>You Pass with Myanmar, English, Math and Physic Destination</h1>")
+                   }
+                   else if(myanmar >=80 && english >=80 && math >=80){
+                    document.write("<h1>You Pass with Myanmar, English and Math Destination</h1>")
+                   }
+                   else if(myanmar >=80 && english >=80){
+                    document.write("<h1>You Pass with Myanmar and english Destination</h1>")
+                   }
+                   else if(myanmar >=80){
+                    document.write("<h1>You Pass with Myanmar Destination</h1>")
+                   }
+                   
+                }
+                else{
+                    document.write("<h1>You Fail.</h1>")
+                }
+    }
+   
     </script>
+    
 </body>
 </html>

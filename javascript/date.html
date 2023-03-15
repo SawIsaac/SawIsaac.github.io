@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+    <link rel="stylesheet" href="../javascript/digitalclock.css">
+</head>
+<body>
+    <h1>Date</h1>
+    <div class="digitalclock">
+        <span id="hour"> :</span>
+        <span>:</span>
+        <span id="minute"> :</span>
+        <span>:</span>
+        <span id="time"></span>
+    </div>
+    <script>
+        let todayDate = new Date();
+        console.log(todayDate);
+
+        let fullYear = todayDate.getFullYear();
+        console.log(fullYear);
+
+        let fullMonth = todayDate.getMonth();
+        console.log(fullMonth);
+
+        let fullDate = todayDate.getDate();
+        console.log(fullDate);
+
+        let fullDay = todayDate.getDay();
+        console.log(fullDay);
+
+        let fullHour = todayDate.getHours();
+        console.log(fullHour);
+
+        let fullMinute= todayDate.getMinutes();
+        console.log(fullMinute);
+
+        let fullSecond = todayDate.getSeconds();
+        console.log(fullSecond);
+
+        setInterval(timeInterval,1000)
+
+        function timeInterval() {
+            let date=new Date();
+            let hours = date.getHours();
+            let minutes = date.getMinutes();
+            let seconds = date.getSeconds();
+            document.getElementById('hour').innerHTML=hours;
+            document.getElementById('minute').innerHTML=minutes;
+            document.getElementById('time').innerHTML=seconds;
+        }
+    </script>
+</body>
+</html>
