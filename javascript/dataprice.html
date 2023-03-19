@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Looping</title>
+</head>
+<body>
+    <h1>Array Looping</h1>
+    <form action="" name="myForm">
+        <label for="">Date</label>
+        <input type="date" name="date">
+        <br>
+        <label for="" name="product">Product</label>
+        <input type="text" name="product">
+        <br>
+        <label for="" name="price">Price</label>
+        <input type="number" name="price">
+        <br>
+        <button type="button" onclick='updateproduct()'>Add</button>
+    </form>
+    <h1>Product List</h1>
+    <table border="1" cellpadding="20" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Product</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody id="tobody">
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td id="all"></td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <script>
+        var food=[];
+        function updateproduct(){
+            let Date = document.myForm.date.value;
+            let product = document.myForm.product.value;
+            let price = document.myForm.price.value;
+            let total = price ;
+            
+            let accounting = {
+                Product_date : Date,
+                Product_name : product,
+                Product_price : price
+            }
+            
+            food.push(accounting);
+
+            showaddproduct();
+        }
+
+        function showaddproduct(){
+            let addproduct = '';
+            let total = 0;
+            
+            for(let i = 0; i <food.length; i ++){
+                console.log(food[i]);
+                addproduct = addproduct +`
+                    <tr>
+                        <td>${food[i].Product_date}</td>
+                        <td>${food[i].Product_name}</td>
+                        <td>${food[i].Product_price}</td>
+                    </tr>
+                `;
+                total += parseInt (food[i].Product_price);
+               
+            }
+            
+            document.getElementById('tobody').innerHTML =  addproduct;
+            document.getElementById('all').innerHTML = total;
+        }
+    </script>
+</body>
+</html>
