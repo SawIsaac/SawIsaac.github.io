@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effect</title>
+</head>
+<body>
+    <h1>Effect</h1>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, eius nisi. Esse ullam doloribus veniam eligendi, mollitia eos minima veritatis magni quisquam, excepturi, ut blanditiis? Reiciendis amet error consequuntur quasi eos dolores repellat similique maxime. Saepe maxime nulla nihil quidem aperiam, eligendi facilis optio voluptatibus voluptates similique cumque suscipit? Sit nisi cum repudiandae eos minima at velit consequatur, enim, eaque rerum magnam ea laborum neque voluptatibus id corrupti itaque hic ad? Dolores sapiente neque, laboriosam iure delectus ea veritatis voluptas ipsa atque sequi excepturi voluptatem hic maiores in possimus quaerat. Tempora, non voluptatum vero nemo neque repellat porro explicabo, enim perspiciatis eos placeat ex nam, corrupti saepe ab deleniti omnis laborum magni quis accusantium officia? Nostrum ab sequi accusamus, tempora quae laudantium sunt dolor suscipit dolores et, delectus quibusdam blanditiis. Itaque deleniti tenetur animi, excepturi sed quos aliquid quasi, eum fuga delectus minima amet iure. Dicta possimus amet laboriosam, voluptates officia animi in consequuntur et, similique earum veritatis nisi error dolor assumenda perspiciatis deserunt debitis est ipsam eaque tempora. Doloribus modi, aperiam sint repellendus accusantium perspiciatis. Quasi veniam alias obcaecati incidunt praesentium a. Doloremque repudiandae voluptas voluptates autem voluptatum optio cupiditate eaque, odio itaque iusto dolor quas ab modi quisquam.</p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+    <button id="fade-out">Fade out</button>
+    <button id="fade-in">Fade in</button>
+    <button id="fade-toggle">Fade Toggle</button>
+    <button id="fade-to">FadeTO</button>
+    <button id="fade-to2">FadeTo2</button>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#hide').click(function(){
+                $('p').hide(1000, function(){
+                    alert('p tag is hide');
+                });
+            })
+            $('#show').click(function(){
+                $('p').show('slow');
+            })
+
+            $('#toggle').click(function(){
+                $('p').toggle(1000);
+            })
+            $('#fade-out').click(function(){
+                $('p').fadeOut('slow');
+            })
+            $('#fade-in').click(function(){
+                $('p').fadeIn('slow');
+            })
+            $('#fade-toggle').click(function(){
+                $('p').fadeToggle(5000);
+            })
+            $('#fade-to').click(function(){
+                $('p').fadeTo(1000, 0.2);
+            })
+            $('#fade-to2').click(function(){
+                $('p').fadeTo(1000, 0.5)
+            })
+        });
+    </script>
+</body>
+</html>

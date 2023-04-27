@@ -3,33 +3,7 @@
     padding: 0;
 }
 
-body{
-    display: flex;
+#doge{
+    position: relative;
+    text-align: center;
 }
-.parent_star{
-    width: 200px;
-    height: 40px;
-    background-color: transparent;
-    box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.1);
-}
-
-
-.parent_star div{
-    padding: 3px;
-    color: #ffe400;
-}
-
-.star-icon input{
-    display: none;
-}
-
-.star-icon input + label{
-    font-size: 30px;
-    cursor: pointer;
-}
-
-.star-icon input:checked + label ~ label{
-    color: #838383;
-} 
-
-/* .star-icon input:checked + */

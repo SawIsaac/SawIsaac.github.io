@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set or remove attribute</title>
+</head>
+<body>
+    <h1>Set Or Remove Attribute</h1>
+
+    <p style="color: red;" id="colourr">Let's change the color</p>
+    <button onclick="colorillusion()">Change the color</button>
+    <script>
+        function colorillusion(){
+            let color = document.getElementById('colourr');
+            let b = color.getAttribute('style');
+            console.log(b);
+            if(b == "color: red;"){
+                color.removeAttribute('style');
+                color.setAttribute('style','color:green');
+            }
+            else{
+                color.removeAttribute('style');
+                color.setAttribute('style','color:red');
+            }
+        }
+
+    </script>
+</body> 
+</html>

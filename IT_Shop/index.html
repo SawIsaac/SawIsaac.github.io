@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../IT_Shop/fontawesome/fontawesome-free-6.4.0-web/css/all.min.css">
+    <script src="../IT_Shop/fontawesome/fontawesome-free-6.4.0-web/js/all.min.js"></script>
+</head>
+<body>
+    <!-- navigation bar -->
+    <nav class="nav-parent">
+        <div class="nav-title">
+            <h1>It Shop</h1>
+        </div>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li class="cart-parent"><a href="checkout.html"><i class="fa-solid fa-cart-shopping fa-lg"></i><span class="cart" id="count_number"></span></a></li>
+        </ul>
+    </nav>
+    <!-- end navigation bar -->
+
+
+    <!-- Start selection product -->
+    <div class="selection-product-parent">
+            <div class="item">
+                <div>
+                    <img src="asus.webp" alt="" width="300px" height="250px">
+                </div>
+                <div class="item-detail">
+                    <h2>Laptop</h1>
+                    <p>Price : 2300000 MMK</p>
+                </div>
+                <button class="add-button" data-id="1" data-name="Laptop 1" data-price="2300000">Add to Cart</button>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="asus.webp" alt="" width="300px" height="250px">
+                </div>
+                <div class="item-detail">
+                    <h2>Laptop</h1>
+                    <p>Price : 1000000 MMK</p>
+                </div>
+                <button class="add-button" data-id="2" data-name="Laptop 2" data-price="1000000">Add to Cart</button>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="asus.webp" alt="" width="300px" height="250px">
+                </div>
+                <div class="item-detail">
+                    <h2>Laptop</h1>
+                    <p>Price : 100000 MMK</p>
+                </div>
+                <button class="add-button">Add to Cart</button>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="asus.webp" alt="" width="300px" height="250px">
+                </div>
+                <div class="item-detail">
+                    <h2>Laptop</h1>
+                    <p>Price : 100000 MMK</p>
+                </div>
+                <button class="add-button">Add to Cart</button>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="asus.webp" alt="" width="300px" height="250px">
+                </div>
+                <div class="item-detail">
+                    <h2>Laptop</h1>
+                    <p>Price : 100000 MMK</p>
+                </div>
+                <button class="add-button">Add to Cart</button>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="asus.webp" alt="" width="300px" height="250px">
+                </div>
+                <div class="item-detail">
+                    <h2>Laptop</h1>
+                    <p>Price : 100000 MMK</p>
+                </div>
+                <button class="add-button">Add to Cart</button>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="asus.webp" alt="" width="300px" height="250px">
+                </div>
+                <div class="item-detail">
+                    <h2>Laptop</h1>
+                    <p>Price : 100000 MMK</p>
+                </div>
+                <button class="add-button">Add to Cart</button>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="asus.webp" alt="" width="300px" height="250px">
+                </div>
+                <div class="item-detail">
+                    <h2>Laptop</h1>
+                    <p>Price : 100000 MMK</p>
+                </div>
+                <button class="add-button">Add to Cart</button>
+            </div>
+    </div>
+
+
+    <script src="../jQuery/jquery.min.js"></script>
+    <script src="count.js"></script>
+    <script>
+        $(document).ready(function() {
+            count();
+            function count(){
+                let shopString = localStorage.getItem('shop');
+                if(shopString){
+                    let shopArray = JSON.parse(shopString);
+                    if(shopArray != 0) {
+                        $('#count_number').text(shopArray.length);
+                    }
+                }else{
+                    $('#count_number').text('0');
+                }
+            }
+
+            $(".add-button").click(function(){
+                let item_id = $(this).data('id');
+                let item_name = $(this).data('name');
+                let item_price = $(this).data('price');
+
+                console.log(item_id,item_name,item_price);
+
+                let shop_item = {
+                    id : item_id,
+                    name : item_name,
+                    price : item_price,
+                    qty : 1
+                }
+
+                console.log(shop_item);
+
+                let shopString = localStorage.getItem('shop');
+                let shopArray;
+                if(shopString == null){
+                    shopArray = [];
+                }else{
+                    shopArray = JSON.parse(shopString);
+                }
+
+                let status = false;
+                $.each(shopArray, function(i,v){
+                    if(item_id == v.id){
+                        status = true;
+                        v.qty++;
+                    }
+                })
+                if(status == false){
+                    shopArray.push(shop_item);
+                }
+
+                let shopData = JSON.stringify(shopArray);
+                localStorage.setItem('shop',shopData)
+
+              count();  
+            })
+        });
+    </script>
+</body>
+</html>

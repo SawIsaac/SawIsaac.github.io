@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property and Textnote</title>
+</head>
+<body>
+        <h1>Property and Method</h1>
+        <h2 id="createTextNodeId"></h2>
+        <h4 id="myId"></h4>
+        <p id="setArt">This is set attribute</p>
+        <h1 id="text">This is some thing that is off from the earth</h1>
+        <h1 style="color: red; border: 10px solid black; padding: 30px; width: 50%;"  id="removeattr">This is a selfish isaac</h1>
+       
+        <button onclick="createText()">Create Text Node</button>
+        <button onclick="createElementLesson()">Create Element Node</button>
+        <button onclick="createSetAttribute()">Create Set Attribute</button>
+        <button onclick="createtext()">Click to change this title</button>
+        <button onclick="createremoveattr()">Click to remove selfish iz from the border</button>
+   
+        <script>
+            function createText(){
+                let createTextNodeId = document.getElementById('createTextNodeId');
+                let createText = document.createTextNode('This is Text Node');
+                createTextNodeId.appendChild(createText);
+            }
+
+            function createElementLesson(){
+                let h3 = document.createElement('h3');
+                h3.innerText= 'Create h3 Element';
+                let myId = document.getElementById('myId');
+                myId.appendChild(h3);
+            }
+            
+            function createSetAttribute(){
+                let setattr = document.getElementById('setArt');
+                setattr.setAttribute('style','color:red;');
+            }
+            
+            function createtext(){
+                let texto = document.getElementById('text');
+                texto.setAttribute('style',  'color:green;');
+            }
+
+            function createremoveattr(){
+                let removeto = document.getElementById('removeattr');
+                removeto.removeAttribute('style');
+                
+            }
+
+            
+
+
+        </script>
+
+</body>
+</html>

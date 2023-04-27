@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Register</title>
+</head>
+
+<body>
+    <!-- add student form -->
+    <div id="add_student">
+        <h3>Add New Students</h3>
+        Name : <input type="text" id="name"><br><br>
+        Email : <input type="email" id="email"><br><br>
+        Phone : <input type="number" id="phone"><br><br>
+        Year : <select name="year" id="year">
+            <option value="">Choose Year</option>
+            <option value="First year">First Year</option>
+            <option value="Second year">Second year</option>
+            <option value="Third year">Third Year</option>
+        </select>
+        <br><br>
+        <button id="add">Register</button>
+    </div>
+    <!-- update student form -->
+    <div id="update_student">
+        <h3>Update Students</h3>
+        <input type="hidden" name="index" id="index">
+        Name : <input type="text" id="edit_name"><br><br>
+        Email : <input type="email" id="edit_email"><br><br>
+        Phone : <input type="number" id="edit_phone"><br><br>
+        Year : <select name="year" id="edit_year">
+            <option value="">Choose Year</option>
+            <option value="First year">First Year</option>
+            <option value="Second year">Second year</option>
+            <option value="Third year">Third Year</option>
+        </select>
+        <br><br>
+        <button id="update">Update Student</button>
+    </div>
+
+
+    <h3>Student List</h3>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#update_student').hide();
+
+            function getData() {
+                let stuString = localStorage.getItem("students");
+                if (stuString) {
+                    let stuArray = JSON.parse(stuString);
+                    let data = '';
+                    let i = 1;
+                    $.each(stuArray, function (i, v) {
+                        data += `<tr>
+                    <td>${i++}</td>
+                    <td>${v.stu_name}</td>
+                    <td>${v.stu_email}</td>
+                    <td>${v.stu_phone}</td>
+                    <td>${v.stu_year}</td>
+                    <td><button class="edit" data-index="${i}" data-name="${v.stu_name}" data-email="${v.stu_email}" data-phone="${v.stu_phone}" data-year="${v.stu_year}">EDIT</button><button class="delete" data-index="${i}">Delet</button></td>
+                </tr>`;
+
+                    })
+                    $('#tbody').html(data);
+                }
+
+            }
+
+            $('#add').click(function () {
+                let name = $('#name').val();
+                let email = $('#email').val();
+                let phone = $('#phone').val();
+                let year = $('#year').val();
+                console.log(name, email, phone, year);
+
+                let students_obj = {
+                    stu_name: name,
+                    stu_email: email,
+                    stu_phone: phone,
+                    stu_year: year
+                }
+
+                let stuString = localStorage.getItem("students");
+                let stuArray;
+                if (stuString == null) {
+                    stuArray = [];
+                } else {
+                    stuArray = JSON.parse(stuString);
+
+                }
+
+                stuArray.push(students_obj);
+
+                let stuData = JSON.stringify(stuArray);
+
+                localStorage.setItem("students", stuData);
+
+                getData();
+            })
+            
+            $('#tbody').on('click', '.delete', function () {
+                let index = $(this).data('index');
+                console.log(index);
+           
+
+            let ans = confirm('Are you sure delet?');
+            console.log(ans);
+
+                if(ans){
+                    let StuString = localStorage.getItem('students');
+                    if (StuString) {
+                        let stuArray = JSON.parse(StuString);
+                        console.log(stuArray);  
+
+                        stuArray.splice(index,1);
+                        console.log(stuArray);
+
+                        let stuData = JSON.stringify(stuArray);
+                        localStorage.setItem('students',stuData);
+
+                        getData();
+                    } 
+                }
+            })
+
+            $('#tbody').on('click', '.edit', function () {
+                $('#add_student').hide();
+                $('#update_student').show();
+                let index = $(this).data('index');
+                let name = $(this).data('name');
+                let email = $(this).data('email');
+                let phone = $(this).data('phone');
+                let year = $(this).data('year');
+                // console.log(index,name,email,phone,year);
+                $('#index').val(index);
+                $('#edit_name').val(name);
+                $('#edit_email').val(email);
+                $('#edit_phone').val(phone);
+                $('#edit_year').val(year);
+
+            })
+    
+            $('#update').click(function(){
+                let upd_index = $('#index').val();
+                let upd_name = $('#edit_name').val();
+                let upd_email = $('#edit_email').val();
+                let upd_phone = $('#edit_phone').val();
+                let upd_year = $('#edit_year').val();
+                console.log(upd_index,upd_name,upd_email,upd_phone,upd_year);
+                let stuString = localStorage.getItem('students');
+                if(stuString){
+                    let stuArray = JSON.parse(stuString);
+                    stuArray[upd_indexww].stu_name = upd_name;
+                    stuArray[upd_indexww].stu_email = upd_email;
+                    stuArray[upd_indexww].stu_phone = upd_phone;
+                    stuArray[upd_indexww].stu_year = upd_year;   
+
+                    let stuData = JSON.stringify(stuArray);
+                    localStorage.setItem('students',stuData);
+
+                    getData();
+
+                    $('#update_student').hide();
+                    $('#add_student').show();
+                }
+            })
+        });
+    </script>
+</body>
+
+</html>
