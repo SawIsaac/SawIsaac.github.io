@@ -19,8 +19,8 @@
             <li class="cart-parent"><a href=""><i class="fa-solid fa-cart-shopping fa-lg"></i><span class="cart" id="count_number"></span></a></li>
         </ul>
     </nav>
-    <div>
-        <table border="1" cellspacing="0" cellpadding="20">
+    <div class="parent-table">
+        <table border="1" cellspacing="0" cellpadding="10">
             <thead>
                 <tr>
                     <th>No.</th>
@@ -95,6 +95,28 @@
                         }
                     })
 
+                    let shopData = JSON.stringify(shopArray);
+                    localStorage.setItem('shop',shopData);
+
+                    getData();
+                    count();
+                }
+            })
+
+            $('#item_body').on('click','.max', function(){
+                let index = $(this).data('index');
+                console.log(index);
+
+                let shopString = localStorage.getItem('shop');
+                if(shopString){
+                    let shopArray = JSON.parse(shopString);
+
+                    $.each(shopArray, function(i,v){
+                        if(index == i) {
+                            v.qty++;
+                            
+                        }
+                    })
                     let shopData = JSON.stringify(shopArray);
                     localStorage.setItem('shop',shopData);
 

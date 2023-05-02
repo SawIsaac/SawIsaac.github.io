@@ -89,7 +89,18 @@
 }
 
 
-/* comment */
-table{
+/* check out */
+.parent-table table{
     margin-top: 50px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.min{
+    padding: 5px;
+}
+
+.max{
+    padding: 5px;
+    float: right;
 }
