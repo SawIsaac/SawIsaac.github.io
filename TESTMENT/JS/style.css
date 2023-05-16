@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* nav start */
+.nav-parent{
+    position: relative;
+    box-shadow: 1px 10px 10px 0px rgba(0, 0, 0, 0.1);
+    padding: 20px 15px;
+}
+
+.nav-title{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-parent ul{
+    display: inline-block;
+    float: right;
+}
+
+.nav-parent ul li{
+    display: inline-block;
+    font-size: large;
+    margin-right: 30px;
+}
+
+.nav-parent ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-parent ul li a:hover{
+    color: grey;
+    cursor: pointer;
+}
+
+.cart-parent{
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: skyblue;
+}
+
+.cart{
+    font-size: 10px;
+    position: absolute;
+    top: 10px;
+    border: 1px solid red;
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    padding: 4px 7px;
+}
+
+/* nav end */
+
+/* product start */
+.selection-product-parent{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.item{
+    margin: 0 auto;
+    margin-top: 75px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 17px;
+    border-radius: 10px;
+}
+
+.item-detail h2{
+    margin-top: 30px;
+    padding: 10px 0px 0px 10px;
+}
+
+.item-detail p{
+    padding: 10px;
+    font-weight: 560;
+}
+
+.add-button{
+    color: #f1f1f1;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #0e6efd;
+    border: 1px solid #0e6efd;
+}
+
+
+/* check out */
+.parent-table table{
+    margin-top: 50px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.min{
+    padding: 5px;
+}
+
+.max{
+    padding: 5px;
+    float: right;
+}

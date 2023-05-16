@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: nunito;
+    font-weight: 900;
+    font-size: large;
+}
+
+@font-face {
+    font-family: nunito;
+    src: url("../fonts/Nunito-Light.ttf");
+}
+
+body{
+    background-color: #fefbfb;
+}
+
+.navbar{
+    background-color: #27ae60;
+}
+
+
+
+.navbar-nav li a{
+    color: #fff;
+    padding: 1rem 0 1rem 0;
+    border-radius: 10px;
+}
+
+.navbar-nav li a:hover{
+    color: #fff;
+    background-color: #219150 !important;
+    border-radius: 10px !important;
+    transition: 0.6s;
+}
+
+
+.bottom-navbar{
+    text-align: center;
+    background-color: #27ae60;
+    position: fixed;
+    bottom: 0;left: 0;right: 0;
+    z-index: 1000;
+}
+
+.bottom-navbar a{
+    font-size: 1.5rem;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    color: #fff;
+}
+
+.bottom-navbar a:hover{
+    background-color: #219150;
+}
+
+.new-member{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    top: 0;left: 0;
+    background: rgba(255, 255, 255, .9);
+    z-index: 10000;
+}
+
+.new-member-register{
+    position: relative;
+    border: .1rem solid rgba(0,0,0,0.4);
+    padding: 40px;
+    border-radius: 25px;
+}
+
+.form-check p a{
+    font-size: .9rem;
+    color: #27ae60;
+}
+
+.form-check{
+    color: #fff;
+    box-shadow:  0 .5rem 1rem rgba (0,0,0,0.7);
+}
+
+.form-check h3{
+    color: #444;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.form-check label{
+    color: #444;
+    font-size: .9rem;
+}
+
+.form-check p{
+    color: #444;
+    font-size: .9rem;
+}
+
+
+.btn-close{
+    position: absolute;
+    top: 2%;
+    right: 3%;
+}
+
+.stand{
+   
+}

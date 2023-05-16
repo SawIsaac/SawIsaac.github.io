@@ -1,0 +1,35 @@
+Useage of [class="card"]
+
+when you want to write a card 
+there will be like this
+<div class="card">
+    <div class="card-header">
+        <p class="card-text"></p>
+    </div>
+    <div class="card-body">
+        <p class="card-text"></p>
+    </div>
+    <div class="card-footer">
+        <p class="card-text"></p>
+    </div>
+</div>
+------------------------------------------>>>>  
+if you want your card to responsive use 
+<div class="card-img-top">
+
+</div>
+-------------------------------------------------------
+
+
+
+
+IF YOU WANT TO WRITE A MODEL
+
+<div class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+        </div>
+    </div>
+</div>
+

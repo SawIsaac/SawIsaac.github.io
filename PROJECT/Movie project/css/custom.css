@@ -1,0 +1,12 @@
+@font-face {
+    font-family: playfair;
+    src: url("../static/PlayfairDisplay-SemiBold.ttf");
+}
+
+*{
+    font-family: playfair;
+}
+
+.nav-link:hover{
+    color: red !important;
+}

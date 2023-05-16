@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <h1 class="text-center text-primary my-5 display-4">Form Lessons</h1>
+
+    <div class="container bg-info">
+        <div class="row">
+            <div class="offset-4 col-4">
+                <form action="#" method="post" >
+                    <div>
+                        <label for="photo" class="form-label">Photo</label>
+                        <input type="file" name="photo" id="photo" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" name="name" id="name" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" name="email" id="email" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="namphone" class="form-label">Phone</label>
+                        <input type="number" name="number" id="number" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="dob" class="form-label">Date of birth</label>
+                        <input type="date" name="dob" id="dob" class="form-control">
+                    </div>
+
+                    <label for="gender" class="d-block">GENDER</label>
+                    <div class="mb-3">
+                        
+                        <div class="form-check form-check-inline">
+                            <input type="radio" name="gender" id="male" class="form-check-input">
+                            <label for="male">male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" name="gender" id="female" class="form-check-input">
+                            <label for="female">female</label>
+                        </div>
+                    </div>
+
+                    <label for="" class="my-2 d-block">Hobbies</label>
+
+                    <div class="form-check">
+                        <input type="checkbox" id="swimming" class="form-check-input">
+                        <label for="swimming" class="form-check-label">Swimming</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="reading" class="form-check-input">
+                        <label for="reading" class="form-check-label">Reading</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="travelling" class="form-check-input">
+                        <label for="travelling" class="form-check-label">Travelling</label>
+                    </div>
+
+
+
+                    <label for="">Choose Graduate</label>
+                    <select name="" id="" class="form-select">
+                        <option value="">First Year</option>
+                        <option value="">Second Year</option>
+                        <option value="">Third Year</option>
+                        <option value="">Fourth Year</option>
+                        <option value="">Fifth Year</option>
+                    </select>
+
+
+
+                    <label for="address" class="my-3">Address</label>
+                    <textarea name="" id="address" class="form-control"></textarea>
+
+
+                    <input type="button"  value="Register" class="btn btn-success float-end my-3">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

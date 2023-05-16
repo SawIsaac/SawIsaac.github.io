@@ -5,15 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../Batch 2 Bootstrap/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
 </head>
-<style>
-    h1{
-        color: red;
-        border: 1px solid red;
-    }
-</style>
 <body>
-    <h1>HELLO WORLD</h1>
+    <div class="container text-center">
+        <h1 id="number" class="text-danger m-5">0</h1>
+        <button id="count" class="btn btn-outline-primary">Click</button>
+    </div>
 
+
+
+
+
+
+
+    <script src="../Batch 2 Bootstrap/bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.js"></script>
+    <script src="../jQuery/jquery.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            let count = 0;
+            $('#count').on('click',function(){
+                count++;
+                $('#number').text(count);
+            })
+
+        })
+    </script>
 </body>
 </html>
