@@ -11,19 +11,24 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="image/logo/dreamlogo.png">
 
-<!-- plug in -->
-
+  <!-- plug in -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/plugin.css">
 
 <body>
   <div class="text-center">
     <img src="image/logo/dreamlogo.png" alt="" class=" img-fluid" width="200px" height="200px">
   </div>
+  <!-- phone size navbar start-->
   <div class=" d-lg-none">
     <form class="d-flex" role="search">
       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-success" type="submit">Search</button>
     </form>
   </div>
+  <!-- phone size navbar end -->
+
+
   <!-- navigation start -->
   <!-- Top navigation  -->
   <nav class="navbar navbar-expand-lg d-none d-lg-block">
@@ -40,19 +45,16 @@
         <li class="nav-item mx-2"><a href="#" class="nav-link">Categories</a></li>
         <li class="nav-item mx-2"><a href="#" class="nav-link">Review</a></li>
         <li class="nav-item mx-2"><a href="#" class="nav-link">Blogs</a></li>
+        <li class="nav-item mx-2"><a href="#" class="nav-link" id="login">Login</a></li>
       </ul>
 
     </div>
   </nav>
   <!-- Top navigation End -->
-  <!-- Bottom Navigation Start -->
-
-
-
-
-  <!-- Bottom Navigation End -->
+  <!-- Bottom Navigation Start (phone size)-->
   <footer class="bottom-navbar navbar d-lg-none">
     <div class="container">
+
       <a href="#" class="mx-auto"><i class="fas fa-home"></i></a>
       <a href="#" class="mx-auto"><i class="fas fa-list"></i></a>
       <a href="#" class="mx-auto"><i class="fas fa-tags"></i></a>
@@ -60,14 +62,20 @@
       <a href="#" class="mx-auto"><i class="fas fa-blog"></i></a>
     </div>
 
+
   </footer>
+
+
+
+  <!-- Bottom Navigation End (phone size)-->
+
   <!-- navigation end -->
   <!-- navigation end -->
 
 
   <!-- Login start -->
 
-  <div class="container-fluid new-member" id="form_dismiss">
+  <div class="container-fluid new-member">
 
     <div class="new-member-register">
       <form action="" class="form-check">
@@ -82,7 +90,7 @@
           class="form-control mb-3 w-100">
 
         <div class="mb-2">
-          <input type="checkbox" id="remember-me" class="form-check-input ms-1">
+          <input type="checkbox swiper-slide" id="remember-me" class="form-check-input ms-1">
           <label for="remember-me" class="form-check-label">remember me</label>
         </div>
 
@@ -96,20 +104,274 @@
   <!-- Login End -->
 
   <!-- home section start -->
-  
+
+  <section class="bunnerwidth">
+    <div class="container-fluid home container-fluid-lg">
+      <div class="row home-child">
+        <div class="col-12 col-lg-6 home-text">
+          <h3 class="text-center">Upto 75% off</h3>
+          <p>From captivating novels to informative non-fiction, there's something for every avid reader to discover.
+            Don't miss out on this golden opportunity to expand your library and dive into captivating stories at a
+            fraction of the price.</p>
+          <a href="" class="btn btn-outline-success">Shop Now</a>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="swiper mySwiper img-item">
+            <div class="swiper-wrapper">
+              <a href="" class="swiper-slide"><img src="image/Slide/final-resize1.jpg" alt="" class="img-fluid"></a>
+              <a href="" class="swiper-slide"><img src="image/Slide/final-resize2.jpg" alt="" class="img-fluid"></a>
+              <a href="" class="swiper-slide"><img src="image/Slide/final-resize4.jpg" alt="" class="img-fluid"></a>
+              <a href="" class="swiper-slide"><img src="image/Slide/final-resize5.jpg" alt="" class="img-fluid"></a>
+              <a href="" class="swiper-slide"><img src="image/Slide/final-resize6.jpg" alt="" class="img-fluid"></a>
+              <a href="" class="swiper-slide"><img src="image/Slide/thelittleprince.jpg" alt="" width="200px"
+                  height="300px"></a>
+              <a href="" class="swiper-slide"><img src="image/Slide/thegiver7.jpg" alt="" class="img-fluid" width="200px"
+                height="300px"></a>
+              <a href="" class="swiper-slide"><img src="image/Slide/thehateugive-8.jpg" alt="" class="img-fluid" width="200px"
+                height="300px"></a>
+            </div>
+            <hr class="stand">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
   <!-- home section end -->
+  <!-- icon section start here -->
+  <div class="container-fluid icon-section">
+    <div class="row">
+      <div class="col-12 col-lg-3 col-sm-6">
+        <div class="icon-section-text-border">
+          <div class="float-start">
+            <i class="fas fa-plane icon-display"></i>
+          </div>
+          <div class="icon-section-text">
+            <h3>Free shipping</h3>
+            <p>Order over 30000MMk</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 col-sm-6">
+        <div class="icon-section-text-border">
+          <div class="float-start">
+            <i class="fas fa-lock icon-display"></i>
+          </div>
+          <div class="icon-section-text">
+            <h3>Secure Payment</h3>
+            <p>100% Secure Payment</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 col-sm-6">
+        <div class="icon-section-text-border">
+          <div class="float-start">
+            <i class="fas fa-redo-alt icon-display"></i>
+          </div>
+          <div class="icon-section-text">
+            <h3>Easy And Fast Return</h3>
+            <p>10 days Return</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 col-sm-6">
+        <div class="icon-section-text-border">
+          <div class="float-start">
+            <i class="fas fa-headset icon-display"></i>
+          </div>
+          <div class="icon-section-text">
+            <h3> 24/7 Support</h3>
+            <p>Call Us Anytime</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- icon section end here -->
 
+
+  <!-- featured section Start-->
+  <div class="container featured-parent">
+    <h1 class="text-center heading"><span>Featured books</span></h1>
+    <div class="swiper featured-slider">
+      <div class="swiper-wrapper">
+        <div class="box swiper-slide">
+
+          <div class="icon">
+            <a href=""><i class="fas fa-search"></i></a>
+            <a href=""><i class="fas fa-heart"></i></a>
+            <a href=""><i class="fas fa-eye"></i></a>
+          </div>
+          <div class="image">
+            <img src="image/Slide/final-resize1.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>Featured books</h3>
+            <div class="price">$15.99 <span>$20.99</span></div>
+            <a href="" class="btn btn-success">Add to Cart</a>
+          </div>
+
+        </div>
+
+        <div class="box swiper-slide">
+
+          <div class="icon">
+            <a href=""><i class="fas fa-search"></i></a>
+            <a href=""><i class="fas fa-heart"></i></a>
+            <a href=""><i class="fas fa-eye"></i></a>
+          </div>
+          <div class="image">
+            <img src="image/Slide/final-resize2.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>Featured books</h3>
+            <div class="price">$15.99 <span>$20.99</span></div>
+            <a href="" class="btn btn-success">Add to Cart</a>
+          </div>
+
+        </div>
+
+        <div class="box swiper-slide">
+
+          <div class="icon">
+            <a href=""><i class="fas fa-search"></i></a>
+            <a href=""><i class="fas fa-heart"></i></a>
+            <a href=""><i class="fas fa-eye"></i></a>
+          </div>
+          <div class="image">
+            <img src="image/Slide/final-resize3.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>Featured books</h3>
+            <div class="price">$15.99 <span>$20.99</span></div>
+            <a href="" class="btn btn-success">Add to Cart</a>
+          </div>
+
+        </div>
+
+        <div class="box swiper-slide">
+
+          <div class="icon">
+            <a href=""><i class="fas fa-search"></i></a>
+            <a href=""><i class="fas fa-heart"></i></a>
+            <a href=""><i class="fas fa-eye"></i></a>
+          </div>
+          <div class="image">
+            <img src="image/Slide/final-resize4.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>Featured books</h3>
+            <div class="price">$15.99 <span>$20.99</span></div>
+            <a href="" class="btn btn-success">Add to Cart</a>
+          </div>
+
+        </div>
+
+        <div class="box swiper-slide">
+
+          <div class="icon">
+            <a href=""><i class="fas fa-search"></i></a>
+            <a href=""><i class="fas fa-heart"></i></a>
+            <a href=""><i class="fas fa-eye"></i></a>
+          </div>
+          <div class="image">
+            <img src="image/Slide/final-resize5.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>Featured books</h3>
+            <div class="price">$15.99 <span>$20.99</span></div>
+            <a href="" class="btn btn-success">Add to Cart</a>
+          </div>
+
+        </div>
+
+        <div class="box swiper-slide">
+
+          <div class="icon">
+            <a href=""><i class="fas fa-search"></i></a>
+            <a href=""><i class="fas fa-heart"></i></a>
+            <a href=""><i class="fas fa-eye"></i></a>
+          </div>
+          <div class="image">
+            <img src="image/Slide/final-resize6.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>Featured books</h3>
+            <div class="price">$15.99 <span>$20.99</span></div>
+            <a href="" class="btn btn-success">Add to Cart</a>
+          </div>
+
+        </div>
+
+        <div class="box swiper-slide">
+
+          <div class="icon">
+            <a href=""><i class="fas fa-search"></i></a>
+            <a href=""><i class="fas fa-heart"></i></a>
+            <a href=""><i class="fas fa-eye"></i></a>
+          </div>
+          <div class="image">
+            <img src="image/Slide/final-resize7.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>Featured books</h3>
+            <div class="price">$15.99 <span>$20.99</span></div>
+            <a href="" class="btn btn-success">Add to Cart</a>
+          </div>
+
+        </div>
+
+        <div class="box swiper-slide">
+
+          <div class="icon">
+            <a href=""><i class="fas fa-search"></i></a>
+            <a href=""><i class="fas fa-heart"></i></a>
+            <a href=""><i class="fas fa-eye"></i></a>
+          </div>
+          <div class="image">
+            <img src="image/Slide/thehateugive-8.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>Featured books</h3>
+            <div class="price">$15.99 <span>$20.99</span></div>
+            <a href="" class="btn btn-success">Add to Cart</a>
+          </div>
+
+        </div>
+
+        <div class="box swiper-slide">
+
+          <div class="icon">
+            <a href=""><i class="fas fa-search"></i></a>
+            <a href=""><i class="fas fa-heart"></i></a>
+            <a href=""><i class="fas fa-eye"></i></a>
+          </div>
+          <div class="image">
+            <img src="image/Slide/thegiver7.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>Featured books</h3>
+            <div class="price">$15.99 <span>$20.99</span></div>
+            <a href="" class="btn btn-success">Add to Cart</a>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <!-- featured section End -->
 
 
 
 
 
   <!-- plug in -->
- 
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="script/plugin.js"></script>
 
 
   <!-- bootstrap -->
@@ -122,19 +384,13 @@
   <script src="JQuery/jquery.min.js"></script>
 
   <!-- script jquer -->
-  <!-- <script src="script/script.js"></script> -->
-  <script>
-    $(document).ready(function(){
-      $('#dismiss').click(function(){
-        $('#form_dismiss').hide();
-      })
-    });
-  </script>
+  <script src="script/script.js"></script>
 
 
 
 
-  
+
+
 </body>
 
 </html>
