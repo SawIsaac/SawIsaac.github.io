@@ -492,7 +492,7 @@ body{
 }
 
 .review-slider .box:hover{
-    border: .1rem solid rgba(0,0,0,0.3);
+    border: .1rem solid rgba(0,0,0,0.1);
 }
 
 .review-slider .box img{
@@ -526,4 +526,52 @@ body{
 
 #review1,#review2,#review3,#review4,#review5,#review6{
     display: none;
+}
+
+/* review section end */
+
+/* blog section start */
+.blogsection{
+    margin-top: 150px;
+}
+
+.blog-slider .box{
+    margin: 2rem 0;
+    width: 30rem;
+    border: .1rem solid rgba(0,0,0,0.1);
+}
+
+.blog-slider .box:hover{
+    border: .1rem solid rgba(0,0,0,0.3);
+}
+
+.blog-slider .box .image{
+    height: 20rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.blog-slider .box .image img{
+    width: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.blog-slider .box:hover .image img{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.blog-slider .box .content{
+    padding: 2rem;
+}
+
+.blog-slider .box h3{
+    font-size: 1.5rem;
+    color: #444;
+}
+
+.blog-slider .box p{
+    font-size: 1rem;
+    color: #444;
 }

@@ -61,7 +61,7 @@ $(document).ready(function(){
         $('#review6').show(this);
         $('.review6').css('display','none')
     })
-    $('.reviewrl2').click(function(){
+    $('.reviewrl6').click(function(){
         $('#review6').hide(this);
         $('.review6').show(this);
     })

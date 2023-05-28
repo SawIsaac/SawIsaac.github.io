@@ -102,4 +102,28 @@
         },
       },
     });
+
+    var swiper = new Swiper(".blog-slider", {
+      spaceBetween: 10,
+      loop:true,
+      centeredSlides: true,
+      autoplay:{
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+       428: {
+          slidesPerView: 1.2,
+        },
+        728: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+    });
     
