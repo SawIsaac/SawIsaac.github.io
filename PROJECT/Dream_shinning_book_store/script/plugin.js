@@ -54,3 +54,52 @@
       },
     });
   
+
+    var swiper = new Swiper(".arrivals-slider", {
+      spaceBetween: 10,
+      loop:true,
+      centeredSlides: true,
+      autoplay:{
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        728: {
+          slidesPerView: 1.8,
+        },
+        1024: {
+          slidesPerView: 2.4,
+        },
+        1400: {
+          slidesPerView: 3,
+        },
+      },
+    });
+
+    var swiper = new Swiper(".review-slider", {
+      spaceBetween: 10,
+      loop:true,
+      centeredSlides: true,
+      autoplay:{
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+       428: {
+          slidesPerView: 1.5,
+        },
+        728: {
+          slidesPerView: 2.5,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+    });
+    
