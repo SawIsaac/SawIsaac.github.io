@@ -575,3 +575,70 @@ body{
     font-size: 1rem;
     color: #444;
 }
+
+/* blog end */
+
+/* footer start */
+.box-container{
+    display: grid;
+    grid-template-columns: 20% 15% 25% 40%;
+    gap: 1.5rem;
+}
+
+.box-container .box h3{
+    font-size: 2.2rem;
+    color: #444;
+    padding: 1rem 0;
+}
+
+.box-container .box a{
+    display: block;
+    font-size: 1rem;
+    color: #666;
+    padding: 1rem 0;
+    text-decoration: none;
+}
+
+.box-container .box a {
+    color: #27ae60;
+    padding-right: .5rem;
+}
+
+.box-container .box a:hover {
+    padding-left: .2rem;
+}
+
+.box-container .box .map{
+    width: 100%;
+}
+
+.share{
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.share a{
+    padding: 15px 25px;
+    font-size: 2rem;
+    border-radius: 50%;
+    color: #fff;
+    background: #27ae60;
+}
+
+.share a:hover{
+    background: #444;
+}
+
+.credit{
+    border-top: .1rem solid rgba(0,0,0,0.3);
+    margin-top: 1rem;
+    padding: 2rem 1rem;
+    padding-top: 2.5rem;
+    color: #666;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.credit span{
+    color: #27ae60;
+}
