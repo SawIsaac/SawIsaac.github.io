@@ -19,7 +19,35 @@ body{
     background-color: #27ae60;
 }
 
+.logocart{
+    width: 175px;
+    padding: 20px 10px;
+    align-items: center;
+    margin: auto;
+    margin-right: 1px;
+ 
+}
 
+.logocart a{
+    padding: .5rem .9rem;
+    color: #27ae60;
+    position: relative;
+}
+
+.logocart a span{
+    position: absolute;
+    background: red;
+    top: -15px;
+    left: 45px;
+    font-size: .7rem;
+    padding: .2rem .3rem;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.logocart a:hover{
+    color: #219150;
+}
 
 .navbar-nav li a{
     color: #fff;
@@ -579,11 +607,7 @@ body{
 /* blog end */
 
 /* footer start */
-.box-container{
-    display: grid;
-    grid-template-columns: 20% 15% 25% 40%;
-    gap: 1.5rem;
-}
+
 
 .box-container .box h3{
     font-size: 2.2rem;
@@ -615,12 +639,14 @@ body{
 .share{
     padding: 1rem 0;
     text-align: center;
+    margin: 0 auto;
 }
 
 .share a{
-    padding: 15px 25px;
-    font-size: 2rem;
-    border-radius: 50%;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 100%;
+    padding: 10px 15px;
     color: #fff;
     background: #27ae60;
 }
