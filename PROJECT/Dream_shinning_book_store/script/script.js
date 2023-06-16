@@ -8,6 +8,7 @@ $(document).ready(function(){
         $('.new-member').css('transform','scale(0)') 
     });
 
+
     $('.review1').click(function(){
         $('#review1').show(this);
         $('.review1').css('display','none')

@@ -15,6 +15,13 @@ body{
     background-color: #fefbfb;
 }
 
+
+.navdos a{
+    font-size: large;
+    color: #fff;
+    padding: .1rem;
+}
+
 .navbar{
     background-color: #27ae60;
 }
