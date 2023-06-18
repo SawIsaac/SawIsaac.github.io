@@ -94,10 +94,10 @@ body{
 }
 
 .navigation ul li a:hover{
-    color: #fefefe;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1);
+    color: red;
+    box-shadow: 10px 10px 10px red;
     border-radius: 10px;
-    background: #b43327;
+    background: white;
 }
 
     /* NAVIGATION END */
@@ -221,7 +221,7 @@ body{
     /* bunner start */
 .textslider-parent{
     margin-top: 35px;
-    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 20px 20px 10px rgb(95, 0, 0);
     width: 95%;
     background: transparent;
     border-radius: 20px;
@@ -316,18 +316,194 @@ body{
 }
 
     /* bunner end */
+    
+    /* Programming language slider start */
+.logo-slider{
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.logo-slider .slider-track{
+    display: flex;
+    width: calc(250px *18);
+    animation: scroll 10s linear infinite;
+}
+      
+.logo-slider .slider-track .slide{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.logo-slider .slider-track .slide img{
+    width: 100%;
+}
+
+.logo-slider::before,
+.logo-slider::after{
+    background: linear-gradient(to right, rgba(255,255,255,1)0%),
+    rgba(255, 255, 255, 0)100%;
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px*9));
+    }
+    
+}
+      
+    /* Programming language slider end */
+
 
     /* Courses section start */
 .courses-parent{
-    margin-top: 150px;
+    margin-top: 200px;
 }
 
-.courses-parent .courses-slider .swiper-wrapper .box{
+.courses-parent h1{
+    color: #f1f1f1;
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+    /* Comming soon start */
+.courses-parent .courses-slider .swiper-wrapper .box-continue{
+    height: 665px;
+    border: 1px solid #f1f1f1;
+    position: relative;
+    border-radius: 10px;
+}
+/* Hover effect */
+.courses-parent .courses-slider .swiper-wrapper .box-continue:hover{
     border: 1px solid red;
+    box-shadow: 0 0 35px red;
+    cursor: pointer;
+}
+
+.courses-parent .courses-slider .swiper-wrapper .box-continue div {
+    position: absolute;
+    top: 35%;left: 38%;
+    border: 10px solid #f1f1f1;
+    border-radius: 50%;
+}
+/* Hover effect */
+.courses-parent .courses-slider .swiper-wrapper .box-continue:hover div{
+    border: 10px solid red;
+}
+
+.courses-parent .courses-slider .swiper-wrapper .box-continue div span{
+    color: #f1f1f1;
+} 
+/* Hover effect */
+.courses-parent .courses-slider .swiper-wrapper .box-continue:hover div span{
+    color: red;
+}
+
+.courses-parent .courses-slider .swiper-wrapper .box-continue h3{
+    position: absolute;
+    top: 75%;left: 20%;
+    font-size: 3.5rem;
+    color: #f1f1f1;
+}
+
+.courses-parent .courses-slider .swiper-wrapper .box-continue:hover h3{
+    color: red;
+}
+    /* coming soon end */
+
+
+.courses-parent .courses-slider .swiper-wrapper .box{
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.courses-parent .courses-slider .swiper-wrapper .box:hover{
+    box-shadow: 0 0 35px red;
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+.courses-parent .courses-slider .swiper-wrapper .box .image{
+    background: #f1f1f1;
 }
 
 .courses-parent .courses-slider .swiper-wrapper .box .image img{
-    width: 100%;
-    height: 300px;
+    margin-left: 28px;
+    width: 90%;
+    height: 250px;
 }
 
+.courses-parent .courses-slider .swiper-wrapper .box .content h3{
+    color: #f1f1f1;
+    padding-top: .5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.courses-parent .courses-slider .swiper-wrapper .box .content p{
+    color: #f1f1f1;
+    font-size: 1rem;
+    padding: 1rem;
+    letter-spacing: .1rem;
+
+}
+
+.courses-parent .courses-slider .swiper-wrapper .box .content .courseduration{
+    top: 0;
+}
+
+.courses-parent .courses-slider .swiper-wrapper .box .content .courseduration h3{
+    font-family: eves;
+}
+
+/* .courses-parent .courses-slider .swiper-wrapper .box .content .underline{
+    position: absolute;
+    top: 43%;
+    left: 25%;
+    border: .1rem solid red;
+    width: 50%;
+} */
+
+.courses-parent .courses-slider .swiper-wrapper .box .content .courseduration .duration div{
+    color: red;
+}
+
+.courses-parent .courses-slider .swiper-wrapper .box .content .courseduration .duration div span{
+    color: #f1f1f1;
+}
+
+.courses-parent .courses-slider .swiper-wrapper .box .content .courseduration a{
+    color: red;
+    margin: 1rem 0 1rem 230px;
+    padding: 1rem;
+}
+
+.courses-parent .courses-slider .swiper-wrapper .box .content .courseduration a:hover{
+    color: white;
+    background: red;
+}
+
+.color div{
+    color: red;
+}
+
+    /* Course Section end */
+    /* Live streamming section start */
