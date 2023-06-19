@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heinlearn.com</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <!-- plug in -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+<style>
+    .videobox{
+        width: 1300px;
+        height: 600px;
+        border: 1px solid white;
+        margin: 100px auto;
+        position: relative;
+    }
+    .videobox span{
+        position: absolute;
+        top: 37%;
+        left: 45%;
+    }
+
+    .videobox:hover{
+        color: red;
+        box-shadow: 0 0 30px red;
+        cursor: pointer;
+    }
+
+    .videobox span:hover{
+        color: red;
+        cursor: pointer;
+    }
+
+    .simivideo{
+       
+        margin-left: 130px;
+    }
+
+    .simivideo div{
+        position: relative;
+        border: 1px solid white;
+        height: 150px;
+    }
+
+    .simivideo div:hover{
+        border: 1px solid red;
+        cursor: pointer;
+    }
+    .simivideo div:hover span{
+        color: red;
+        cursor: pointer;
+    }
+    .simivideo div:hover p{
+        color: red;
+        cursor: pointer;
+    }
+
+    .simivideo div span{
+        font-size: 2.5rem;
+        position: absolute;
+        top: 28%;left:40%;
+    }
+
+    .simivideo div p{
+        position: absolute;
+        top: 10px;right: 10px;
+        font-size: 1.2rem;
+        color: #f1f1f1;
+    }
+</style>
+<body>
+    <!-- Header start -->
+    <div class="tagtext" id="home">
+        <marquee behavior="scroll" direction="left">
+            <h3 class="mx-5">Open hours: 7am ~ 10pm. <span class="date">From Monday ~ Friday.</span> <span
+                    class="phonecall">Want to know more? Call now -> +123 456 789/ +123 098 765</span> </h3>
+        </marquee>
+    </div>
+
+    <!-- top navigation bar -->
+
+
+    <nav class="navbar navbar-expand-lg d-none d-lg-block navigation" id="home">
+        <div class="container-fluid ">
+
+            <div class="navbar-brand navigationlogo">
+                <a class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                    aria-controls="offcanvasScrolling"><span class="fas fa-bars"></span></a>
+                <h1 class="d-inline-block mx-5">HEIN <span>LEARN</span></h1>
+            </div>
+            <ul class="navbar-nav d-inline-block">
+                <li class="nav-item d-inline-block mx-3"><a href="../index.html" class="nav-link">Home</a></li>
+                <li class="nav-item d-inline-block mx-3"><a href="../index.html#courses" class="nav-link">Course</a></li>
+                <li class="nav-item d-inline-block mx-3"><a href="../about.html" class="nav-link">About</a></li>
+                <li class="nav-item d-inline-block mx-3"><a href="../contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item d-inline-block mx-3"><a href="" class="nav-link">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- top navigation bar -->
+
+    <!-- Header END -->
+
+    <!-- sidebar section start -->
+    <div class="offcanvas offcanvas-start side-bar" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header sidebar-header">
+            <h1 class="offcanvas-title">HEIN <span>LEARN</span></h1>
+            <a data-bs-dismiss="offcanvas" aria-label="Close" class="dismiss"><i class="fas fa-close fa-2x"></i></a>
+        </div>
+        <div class="text-center profile">
+            <img src="../image/profile/user.png" alt="" width="90px">
+            <h3>Name</h3>
+            <p>Student</p>
+            <a href="" class="d-block btn btn-danger w-25">Sign in</a>
+        </div>
+        <hr class="hrbar">
+        <div class="side-bar-navigation">
+            <a href="../index.html"><i class="fas fa-home"></i><span class="mx-1">Home</span></a>
+            <a href="../about.html"><i class="fas fa-question"></i><span class="mx-3">About us</span></a>
+            <a href="../index.html#courses"><i class="fas fa-graduation-cap"></i><span class="">Courses</span></a>
+            <a href="../contact.html"><i class="fas fa-headphones-alt"></i><span class="mx-1">Contact</span></a>
+        </div>
+    </div>
+    <!-- sidebar section end -->
+
+    <!-- Tag line start -->
+    <div class="">
+        <div class="tagline-parent">
+            <div id="carouselExampleSlidesOnly" class="carousel slide tagline-child" data-bs-ride="carousel">
+                <div class="carousel-inner tagline-item">
+                    <div class="carousel-item tagline  text-center active">
+                        <h3>Learn with <span>practise</span></h3>
+                    </div>
+                    <div class="carousel-item tagline text-center">
+                        <h3>Learn new things and <span>develop</span> yourself.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Tag line end -->
+    
+    <!-- video section start -->
+    <div class="container-fluid">
+        <h1 class="text-light" style="font-family: eves; margin-top: 50px;
+        margin-left: 50px;">Lecture video of &nbsp; NO-CODE WEB DEVELOPMENT</h1>
+        <div class="videobox">
+            <span><i class="fas fa-play-circle fa-10x"></i></span>
+        </div>
+        <div class="row gap-3 simivideo">
+            <div class="col-2 p-5">
+                <span><i class="fas fa-play-circle"></i></span>
+                <p class="text-end">#1</p>
+            </div>
+            <div class=" col-2 p-5">
+                <span><i class="fas fa-play-circle"></i></span>
+                <p class="text-end">#2</p>
+            </div>
+            <div class=" col-2 p-5">
+                <span><i class="fas fa-play-circle"></i></span>
+                <p class="text-end">#3</p>
+            </div>
+            <div class=" col-2 p-5">
+                <span><i class="fas fa-play-circle"></i></span>
+                <p class="text-end">#4</p>
+            </div>
+            <div class=" col-2  p-5">
+                <span><i class="fas fa-play-circle"></i></span>
+                <p class="text-end">#5</p>
+            </div>
+        </div>
+    </div>
+    <!-- Video section end -->
+
+
+     <!-- Footer section start -->
+   <div class="container-fluid footersection">
+    <div class="row footer">
+        <div class="col-3 box">
+            <h3 class="text-center">Quick Link</h3>
+                    <a href="../index.html" class="text-start ms-5"><i class="fas fa-arrow-right me-3"></i>Home</a>
+                    <a href="../index.html#courses" class="text-start ms-5"><i class="fas fa-arrow-right me-3"></i>Courses</a>
+                    <a href="../about.html" class="text-start ms-5"><i class="fas fa-arrow-right me-3"></i>About</a>
+                    <a href="../contact.html" class="text-start ms-5"><i class="fas fa-arrow-right me-3"></i>Contact</a>
+                    <a href="" class="text-start ms-5"><i class="fas fa-arrow-right me-3"></i>Learn more</a>
+        </div>
+        <div class="col-3 box">
+            <h3 class="text-center">Cookie</h3>
+                    <a href="" class="text-start ms-5"><i class="fas fa-arrow-right mx-2"></i>Terms</a>
+                    <a href="" class="text-start ms-5"><i class="fas fa-arrow-right mx-2"></i>Privacy Policy</a>
+                    <a href="" class="text-start ms-5"><i class="fas fa-arrow-right mx-2"></i>Cookie settings</a>
+                    <a href="" class="text-start ms-5"><i class="fas fa-arrow-right mx-2"></i>Sitemap</a>
+                    <a href="" class="text-start ms-5"><i class="fas fa-arrow-right mx-2"></i>Accessibility statement</a>
+        </div>
+        <div class="col-3 box">
+            <h3 class="text-center">Contact Info</h3>
+                    <a href="" class="text-start ms-5"><i class="mx-2 fas fa-phone"></i><span>+959 123 456 789</span></a>
+                    <a href="" class="text-start ms-5"><i class="mx-2 fas fa-phone"></i><span>+013 1223 445</span></a>
+                    <a href="" class="text-start ms-5"><i class="mx-2 fas fa-phone"></i><span>+959 987 654 321</span></a>
+                    <a href="" class="text-start ms-5"><i class="mx-2 fas fa-envelope"></i><span>Heinlearn@gmail.com</span></a>
+                    <a href="" class="text-start ms-5"><i class="mx-2 fas fa-earth"></i><span>www.heinlearn.coms</span></a>
+        </div>
+        <div class="box col-3 text-start">
+            <h3>For latest info</h3>
+            <p class="text-light">Sumbit you email here</p>
+            <input type="text" class="p-1 rounded-3"><button class="btn btn-outline-danger">Sumbit</button>
+            <br><br>
+                    <h1>HEIN <span>LEARN</span></h1>
+                    <div class="socialmedia text-start">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+        </div>
+    </div>
+</div>
+<!-- Footer section end -->
+
+    <div class="container text-center text-light">
+        Created by <span> Isaac </span> © all rights reserved !
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.js"></script>
+    <script src="../fontawesome-free-6.4.0-web/js/all.min.js"></script>
+    <script src="../JQuery/jquery.min.js"></script>
+    <script src="../script/plugin.js"></script>
+    <script src="../script/script.js"></script>
+</body>
+
+</html>

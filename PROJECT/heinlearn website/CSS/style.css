@@ -353,7 +353,7 @@ body{
 
     /* Courses section start */
 .courses-parent{
-    margin-top: 200px;
+    
 }
 
 .courses-parent h1{
@@ -584,4 +584,72 @@ body{
     color: red;
 }
 
+.footersection .footer .box h1{
+    color: #f1f1f1;
+    font-size: 2.7rem;
+    font-family: eve;
+}
+
+.footersection .footer .box h1 span{
+    color: red;
+}
+
+.socialmedi{
+}
+
+.socialmedia a{    
+    display: inline-block !important;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    transition: .5s;
+}   
+
+.socialmedia a:hover{
+    transition: .5s;
+    color: red !important;
+    transform: scale(1.3);
+    padding-left: 0;
+}
+
     /* Footer section end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* About page start */
+.aboutus .about h1{
+    font-size: 1.5rem;
+    color: #f1f1f1;
+}
+/* About Page ENd */
