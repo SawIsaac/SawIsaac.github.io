@@ -633,6 +633,8 @@ body{
 .box-container .box a {
     color: #27ae60;
     padding-right: .5rem;
+    color: #27ae60;
+    padding-right: .5rem;
 }
 
 .box-container .box a:hover {

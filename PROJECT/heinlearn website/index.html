@@ -23,20 +23,6 @@
         </marquee>
     </div>
 
-    <!-- phone size top navigation bar start-->
-    <nav class="navbar navbar-expand-lg d-lg-none navigation">
-        <div class="container-fluid ">
-
-            <div class="navbar-brand navigationlogo">
-                <a class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
-                    aria-controls="offcanvasScrolling"><span class="navbar-toggler-icon"></span></a>
-                <h1 class="d-inline-block mx-5">HEIN LEARN</h1>
-            </div>
-        </div>
-    </nav>
-    <!-- phone size top navigation bar end -->
-
-
     <!-- top navigation bar -->
 
 
@@ -53,57 +39,15 @@
                 <li class="nav-item d-inline-block mx-3"><a href="#courses" class="nav-link">Course</a></li>
                 <li class="nav-item d-inline-block mx-3"><a href="" class="nav-link">About</a></li>
                 <li class="nav-item d-inline-block mx-3"><a href="" class="nav-link">Contact</a></li>
-                <!-- <li class="nav-item d-inline-block mx-3"><a href="" class="nav-link">Login</a></li> -->
+                <li class="nav-item d-inline-block mx-3"><a href="" class="nav-link">Login</a></li>
             </ul>
         </div>
     </nav>
     <!-- top navigation bar -->
-    <!-- Bottom Navigation Start (phone size)-->
-    <footer class="bottom-navbar navbar d-lg-none">
-        <div class="container">
-
-            <a href="#home" class="mx-auto"><i class="fas fa-home"></i></a>
-            <a href="#featured" class="mx-auto"><i class="fas fa-list"></i></a>
-            <a href="#new-arrival" class="mx-auto"><i class="fas fa-tags"></i></a>
-            <a href="#review" class="mx-auto"><i class="fas fa-comment"></i></a>
-            <a href="#blog" class="mx-auto"><i class="fas fa-blog"></i></a>
-        </div>
-
-
-    </footer>
-
-
-
-    <!-- Bottom Navigation End (phone size)-->
-
-
-
 
     <!-- Header END -->
 
     <!-- sidebar section start -->
-    <!-- <div class="side-bar">
-        <div class="">
-            <div class="logo text-center">
-                <h1 class="d-inline-block mx-5">HEIN LEARN</h1>
-                <a id="dismiss"><i class="fas fa-xmark fa-2x"></i></a>
-            </div>
-            <div class="text-center profile">
-                <img src="image/profile/user.png" alt="" width="90px">
-                <h3>Name</h3>
-                <p>Student</p>
-                <a href="" class="d-block btn btn-danger w-25">Sign in</a>
-            </div>
-            <hr class="hrbar">
-            <div class="side-bar-navigation">
-                <a href=""><i class="fas fa-home"></i><span class="mx-1">Home</span></a>
-                <a href=""><i class="fas fa-question"></i><span class="mx-3">About us</span></a>
-                <a href=""><i class="fas fa-graduation-cap"></i><span class="">Courses</span></a>
-                <a href=""><i class="fas fa-headphones-alt"></i><span class="mx-1">Contact</span></a>
-            </div>
-            <hr>
-        </div>
-    </div> -->
     <div class="offcanvas offcanvas-start side-bar" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
         id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
         <div class="offcanvas-header sidebar-header">
@@ -196,208 +140,350 @@
     <!-- bunner end -->
 
     <!-- Slider of programming language start-->
-    <div class="container-fluid">
-        <div class="logo-slider">
-            <div class="slider-track">
-                <div class="slide">
+    <div class="container-fluid logoslider-parent">
+        <h1>Programming Languages</h1>
+        <div class="swiper logoslider">
+            <div class="swiper-wrapper text-center">
+                <div class="swiper-slide">
                     <img src="image/programming _language/C++.png" alt="">
                 </div>
-                <div class="slide">
+                <div class="swiper-slide">
                     <img src="image/programming _language/C.png" alt="">
                 </div>
-                <div class="slide">
+                <div class="swiper-slide">
                     <img src="image/programming _language/go.png" alt="">
                 </div>
-                <div class="slide">
+                <div class="swiper-slide">
                     <img src="image/programming _language/java.png" alt="">
                 </div>
-                <div class="slide">
+                <div class="swiper-slide">
                     <img src="image/programming _language/javascript.png" alt="">
                 </div>
-                <div class="slide">
+                <div class="swiper-slide">
                     <img src="image/programming _language/Kotlin.png" alt="">
                 </div>
-                <div class="slide">
+                <div class="swiper-slide">
                     <img src="image/programming _language/php.png" alt="">
                 </div>
-                <div class="slide">
+                <div class="swiper-slide">
                     <img src="image/programming _language/python.png" alt="">
                 </div>
-                <div class="slide">
+                <div class="swiper-slide">
                     <img src="image/programming _language/ruby.png" alt="">
                 </div>
-                <div class="slide">
+                <div class="swiper-slide">
                     <img src="image/programming _language/rust.png" alt="">
                 </div>
-                <div class="slide">
+                <div class="swiper-slide">
                     <img src="image/programming _language/swift.png" alt="">
                 </div>
-                <div class="slide">
+                <div class="swiper-slide">
                     <img src="image/programming _language/TypeScript.png" alt="">
                 </div>
             </div>
+    </div>
+
+        <!-- Slider of programming language end -->
+
+        <!-- Course section start -->
+        <div class="container courses-parent">
+            <h1 class="text-center" id="courses">Courses</h1>
+            <div class="swiper courses-slider">
+                <div class="swiper-wrapper">
+                    <!-- I -->
+                    <div class="box swiper-slide">
+                        <div class="image">
+                            <img src="image/Courses/nocodewebdev.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>NO-CODE WEB DEVELOPMENT</h3>
+                            <hr class="underline w-50 text-center" style="border: 2px solid red; margin-left: 25%;">
+                            <p>No-code ဝဘ်ဖွံ့ဖြိုးတိုးတက်မှုဆိုသည်မှာ သမားရိုးကျ ပရိုဂရမ်းမင်းကုဒ်ကို မရေးဘဲ
+                                ဝဘ်အက်ပလီကေးရှင်းများ သို့မဟုတ် ဝဘ်ဆိုဒ်များကို ဖန်တီးခြင်းလုပ်ငန်းစဉ်ကို ရည်ညွှန်းသည်။
+                                ၎င်းသည် ကျယ်ပြန့်သော coding အသိပညာ သို့မဟုတ် နည်းပညာဆိုင်ရာ ကျွမ်းကျင်မှုမရှိဘဲ
+                                တစ်ဦးချင်းစီအား လုပ်ဆောင်နိုင်သော နှင့် အပြန်အလှန်အကျိုးပြုသော ဝဘ်အတွေ့အကြုံများကို
+                                တည်ဆောက်နိုင်စေပါသည်။</p>
+                            <div class="courseduration">
+
+                                <div class="row duration">
+                                    <div class="col-6 text-center">
+                                        <h3>Duration</h3>
+                                        <i class="fas fa-clock"></i>
+                                        <span class="mx-2">3:00 Hours</span>
+                                    </div>
+                                    <div class="col-6 text-center">
+                                        <h3>Courses</h3>
+                                        <i class="fas fa-video"></i>
+                                        <span class="mx-2">24 Videos</span>
+                                    </div>
+                                </div>
+                                <a href="webpage/nocode.html" class="btn btn-outline-danger p-3 m-3">Learn Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- II -->
+                    <div class="box swiper-slide">
+                        <div class="image">
+                            <img src="image/Courses/entryofprogramming.avif" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>ENTRY OF PROGRAMMING</h3>
+                            <hr class="underline w-50 text-center" style="border: 2px solid red; margin-left: 25%;">
+                            <p>ပရိုဂရမ်မာတစ်ယောက်ဖြစ်လာရန်၊ ပရိုဂရမ်ရေးသားခြင်းဆိုင်ရာ သဘောတရားများ၊ တစ်ခု သို့မဟုတ်
+                                တစ်ခုထက်ပိုသော ပရိုဂရမ်းမင်းဘာသာစကားကျွမ်းကျင်မှု၊ ပြဿနာဖြေရှင်းနိုင်မှုစွမ်းရည်၊
+                                ဒေတာဖွဲ့စည်းပုံများနှင့် အယ်လဂိုရီသမ်များနှင့် ရင်းနှီးကျွမ်းဝင်မှု၊
+                                ဆော့ဖ်ဝဲဖွံ့ဖြိုးတိုးတက်မှုဘဝသံသရာအသိပညာ၊ ဗားရှင်းထိန်းချုပ်မှုစနစ်များ၊ IDE တစ်ခု၊
+                                အမှားရှာပြင်ခြင်းတို့ကို အခြေခံအားဖြင့် လိုအပ်ပါသည်။</p>
+                            <div class="courseduration">
+
+                                <div class="row duration">
+                                    <div class="col-6 text-center">
+                                        <h3>Duration</h3>
+                                        <i class="fas fa-clock"></i>
+                                        <span class="mx-2">3:00 Hours</span>
+                                    </div>
+                                    <div class="col-6 text-center">
+                                        <h3>Courses</h3>
+                                        <i class="fas fa-video"></i>
+                                        <span class="mx-2">24 Videos</span>
+                                    </div>
+                                </div>
+                                 <a href="webpage/entryofprogram.html" class="btn btn-outline-danger p-3 m-3">Learn Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- III -->
+                    <div class="box swiper-slide">
+                        <div class="image">
+                            <img src="image/Courses/webdevwithphp.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>APPLY WEB DEVELOPMENT WITH PHP</h3>
+                            <hr class="underline w-50 text-center" style="border: 2px solid red; margin-left: 25%;">
+                            <p>PHP သည် web development အတွက် အသုံးများသော server-side scripting language တစ်ခုဖြစ်ပြီး
+                                developer များသည် dynamic web pages များကို ဖန်တီးရန်၊ form data များကို ကိုင်တွယ်ရန်၊
+                                databases များနှင့် အပြန်အလှန် တုံ့ပြန်နိုင်ပြီး web applications များကို
+                                တည်ဆောက်နိုင်စေပါသည်။ Developer များကို ကြံ့ခိုင်ပြီး စွမ်းဆောင်မှုကြွယ်ဝသော
+                                ဝဘ်ဆိုက်များနှင့် ဝဘ်အက်ပလီကေးရှင်းများကို ဖန်တီးနိုင်စေပါသည်။</p>
+                            <div class="courseduration">
+
+                                <div class="row duration">
+                                    <div class="col-6 text-center">
+                                        <h3>Duration</h3>
+                                        <i class="fas fa-clock"></i>
+                                        <span class="mx-2">3:00 Hours</span>
+                                    </div>
+                                    <div class="col-6 text-center">
+                                        <h3>Courses</h3>
+                                        <i class="fas fa-video"></i>
+                                        <span class="mx-2">24 Videos</span>
+                                    </div>
+                                </div>
+                                 <a href="webpage/php.html" class="btn btn-outline-danger p-3 m-3">Learn Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- IV -->
+                    <div class="box swiper-slide">
+                        <div class="image">
+                            <img src="image/Courses/webdevwithjava.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>APPLY WEB DEVELOPMENT WITH JAVA</h3>
+                            <hr class="underline w-50 text-center" style="border: 2px solid red; margin-left: 25%;">
+                            <p>Java သည် ၎င်း၏ ခိုင်မာသောအသိုင်းအဝိုင်းပံ့ပိုးမှုတို့အတွက် လူသိများသော
+                                စွယ်စုံသုံးပရိုဂရမ်ဘာသာစကားဖြစ်ပြီး ၎င်းသည် ဝဘ်ဖွံ့ဖြိုးတိုးတက်မှု၊
+                                မိုဘိုင်းအက်ပ်ဖွံ့ဖြိုးတိုးတက်မှု၊ လုပ်ငန်းဆော့ဖ်ဝဲအပါအဝင်
+                                ကျယ်ပြန့်သောအက်ပ်လီကေးရှင်းများအတွက် သင့်လျော်စေသည်။ Developer များအား လုံခြုံပြီး
+                                စွမ်းဆောင်ရည်မြင့်မားသော အက်ပ်လီကေးရှင်းအမျိုးမျိုးကို တည်ဆောက်နိုင်စေသည့်
+                                အားကောင်းမောင်းသန်သော ပရိုဂရမ်ဘာသာစကားတစ်ခုဖြစ်သည်။</p>
+                            <div class="courseduration">
+
+                                <div class="row duration">
+                                    <div class="col-6 text-center">
+                                        <h3>Duration</h3>
+                                        <i class="fas fa-clock"></i>
+                                        <span class="mx-2">3:00 Hours</span>
+                                    </div>
+                                    <div class="col-6 text-center">
+                                        <h3>Courses</h3>
+                                        <i class="fas fa-video"></i>
+                                        <span class="mx-2">24 Videos</span>
+                                    </div>
+                                </div>
+                                 <a href="webpage/java.html" class="btn btn-outline-danger p-3 m-3">Learn Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- V -->
+                    <div class="box-continue swiper-slide">
+                        <div>
+                            <span>
+                                <i class="fas fa-add fa-10x"></i>
+                            </span>
+                        </div>
+                        <h3>Comming soon</h3>
+                    </div>
+                </div>
+                <!-- next or prev icon start-->
+                <div class="color">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <!-- next ore prev icon end -->
+            </div>
+        </div>
+        <!-- Course section end -->
+        <hr class="w-75" style="border: 1px solid red; margin: 100px auto;">
+        <!-- partner ship start -->
+<div class="container-fluid partnership">
+    <h1 style="font-family: eves; border-bottom: 5px solid red; width: 10%; margin: 0 auto;" class="mb-5 text-center">Partnership</h1>
+    <div class="row partner">
+        <div class="col-4 box">
+            <div class="partner-image " style="background: white;">
+                <img src="https://demo.heinlearn.com/img/center/1645976565.png" alt="" width="350px" height="250px">
+            </div>
+            <div class="partner-content">   
+                <h3>Sakura Yuki School</h3>
+                <p class="text-start">Sakura Yuki School သည် မြန်မာနိုင်ငံတွင် ပြည့်စုံသော သင်ရိုးညွှန်းတမ်း၊ ပြုစုပျိုးထောင်ရေး ပတ်ဝန်းကျင်ကို ပေးဆောင်ပြီး ၎င်း၏ ပညာရေးဆိုင်ရာ ချဉ်းကပ်မှုတွင် ဂျပန်ယဉ်ကျေးမှု၏ အစိတ်အပိုင်းများကို ပေါင်းစပ်ထည့်သွင်းနိုင်သည့် အလားအလာရှိသော ကျောင်းတစ်ကျောင်းဖြစ်သည်။</p>
+            </div>
+        </div>
+        <div class="col-4 box">
+            <div class="partner-image" style="background: white;">
+                <img src="https://demo.heinlearn.com/img/center/1645976589.png" alt="" width="400px" height="250px">
+            </div>
+            <div class="partner-content">
+                <h3>American Training Center</h3>
+                <p class="text-start">American Traning center which is located in 7905 Browning Rd #308, Pennsauken Township, NJ 08109, United States. Is one of the best option you can choose to develop your carrier for your dream.</p>
+            </div>
+        </div>
+        <div class="col-4 box">
+            <div class="partner-image">
+                <img src="https://demo.heinlearn.com/img/center/1645976621.png" alt="" width="450px" height="250px">
+            </div>
+            <div class="partner-content">
+                <h3>Signal Training Center</h3>
+                <p class="text-start">Signal Traning Center သည် IT ကို စိတ်ဝင်စားသော လူငယ်များအတွက် နေရာတစ်ခုဖြစ်သည်။
+                    IT နဲ့ ပတ်သက်တဲ့ ဗဟုသုတ မျိုးစုံကို ပေးစွမ်းနိုင်ပါတယ်။ ၎င်းတွင် ပညာသင်ဆုအစီအစဉ်နှင့် ပုံသေသင်တန်းများရှိသည်။</p>
+            </div>
         </div>
     </div>
-      
-    <!-- Slider of programming language end -->
+</div>
+        <!-- Partner ship end -->
 
-    <!-- Course section start -->
-    <div class="container courses-parent">
-        <h1 class="text-center" id="courses">Courses</h1>
-        <div class="swiper courses-slider">
-            <div class="swiper-wrapper">
-                <!-- I -->
-                <div class="box swiper-slide">
-                    <div class="image">
-                        <img src="image/Courses/nocodewebdev.png" alt="">
-                    </div>
-                    <div class="content">
-                        <h3>NO-CODE WEB DEVELOPMENT</h3>
-                        <hr class="underline w-50 text-center" style="border: 2px solid red; margin-left: 25%;">
-                        <p>No-code ဝဘ်ဖွံ့ဖြိုးတိုးတက်မှုဆိုသည်မှာ သမားရိုးကျ ပရိုဂရမ်းမင်းကုဒ်ကို မရေးဘဲ
-                            ဝဘ်အက်ပလီကေးရှင်းများ သို့မဟုတ် ဝဘ်ဆိုဒ်များကို ဖန်တီးခြင်းလုပ်ငန်းစဉ်ကို ရည်ညွှန်းသည်။
-                            ၎င်းသည် ကျယ်ပြန့်သော coding အသိပညာ သို့မဟုတ် နည်းပညာဆိုင်ရာ ကျွမ်းကျင်မှုမရှိဘဲ
-                            တစ်ဦးချင်းစီအား လုပ်ဆောင်နိုင်သော နှင့် အပြန်အလှန်အကျိုးပြုသော ဝဘ်အတွေ့အကြုံများကို
-                            တည်ဆောက်နိုင်စေပါသည်။</p>
-                        <div class="courseduration">
+<hr style="border: 1px solid red; width:75%; margin: 0 auto;">
 
-                            <div class="row duration">
-                                <div class="col-6 text-center">
-                                    <h3>Duration</h3>
-                                    <i class="fas fa-clock"></i>
-                                    <span class="mx-2">3:00 Hours</span>
-                                </div>
-                                <div class="col-6 text-center">
-                                    <h3>Courses</h3>
-                                    <i class="fas fa-video"></i>
-                                    <span class="mx-2">24 Videos</span>
-                                </div>
-                            </div>
-                            <a class="btn btn-outline-danger">Learn Now</a>
-                        </div>
-                    </div>
+        <!-- Q & A section start-->
+        <div class="accordion QandA-parent text-center" id="accordionPanelsStayOpenExample">
+            <h1>အမေးများသောမေးခွန်းများ</h1>
+            <div class="accordion-item QandA">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    <i class="fa-solid fa-bookmark mx-3"></i><span> ငါဘယ်လို web developer တစ်ယောက်ဖြစ်လာနိုင်မလဲ?</span>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show QandA-content">
+                <div class="accordion-body">
+                    <i class="fa-solid fa-message" style="box-shadow: 0 0 30px red;"></i>
+                   <span class="text-start">
+                    Web developer တစ်ယောက်ဖြစ်ဖို ရန် HTML,CSS & JAVASCRIPT etc., အစရှိသဖြင့် လေ့လာရင်းနဲ့ဖြစ်နိုင်ပါတယ်။ ဒီ Online course ပြီးမြောက်သွားတဲ့အခါမှာ သင့်အနေနဲ့ Web developer တစ်ယောက် ဖြစ်ထိုက်ဖြစ်လျောက်ထိ ဆက်လျှောက်လှမ်းနိုင်ပါတယ်။
+                   </span>
                 </div>
-                <!-- II -->
-                <div class="box swiper-slide">
-                    <div class="image">
-                        <img src="image/Courses/entryofprogramming.avif" alt="">
-                    </div>
-                    <div class="content">
-                        <h3>ENTRY OF PROGRAMMING</h3>
-                        <hr class="underline w-50 text-center" style="border: 2px solid red; margin-left: 25%;">
-                        <p>ပရိုဂရမ်မာတစ်ယောက်ဖြစ်လာရန်၊ ပရိုဂရမ်ရေးသားခြင်းဆိုင်ရာ သဘောတရားများ၊ တစ်ခု သို့မဟုတ်
-                            တစ်ခုထက်ပိုသော ပရိုဂရမ်းမင်းဘာသာစကားကျွမ်းကျင်မှု၊ ပြဿနာဖြေရှင်းနိုင်မှုစွမ်းရည်၊
-                            ဒေတာဖွဲ့စည်းပုံများနှင့် အယ်လဂိုရီသမ်များနှင့် ရင်းနှီးကျွမ်းဝင်မှု၊
-                            ဆော့ဖ်ဝဲဖွံ့ဖြိုးတိုးတက်မှုဘဝသံသရာအသိပညာ၊ ဗားရှင်းထိန်းချုပ်မှုစနစ်များ၊ IDE တစ်ခု၊
-                            အမှားရှာပြင်ခြင်းတို့ကို အခြေခံအားဖြင့် လိုအပ်ပါသည်။</p>
-                        <div class="courseduration">
-
-                            <div class="row duration">
-                                <div class="col-6 text-center">
-                                    <h3>Duration</h3>
-                                    <i class="fas fa-clock"></i>
-                                    <span class="mx-2">3:00 Hours</span>
-                                </div>
-                                <div class="col-6 text-center">
-                                    <h3>Courses</h3>
-                                    <i class="fas fa-video"></i>
-                                    <span class="mx-2">24 Videos</span>
-                                </div>
-                            </div>
-                            <a class="btn btn-outline-danger">Learn Now</a>
-                        </div>
-                    </div>
+              </div>
+            </div>
+            <div class="accordion-item QandA">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    <i class="fa-solid fa-bookmark mx-3"></i><span> အတန်းကိုတက်ရောက်ခြင်းဖြင့် ကျွန်ုပ်သည် ဝဘ်ဆော့ဖ်ဝဲရေးသားသူဖြစ်ရန် အရည်အချင်းပြည့်မီပါသလား။</span>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse QandA-content">
+                <div class="accordion-body">
+                    <i class="fa-solid fa-message" style="box-shadow: 0 0 30px red;"></i>
+                    <span class="text-start">
+                        သင်တန်းကိုတက်ရောက်ခြင်းဖြင့် သ့်အနေဖြင့် ခြေတစ်လှမ်းသာ၍ နားလည် ပိုင်ဆိုင်ထားနိုင်ပြီး နောင်လာသော သင်ခန်းစာများတွင် စွမ်းရည်ကိုပိုမို ထုတ်ချအသုံးချပြနိုင်ချင်းတိုကိုပြုလုပ်နိုင်ရုံသာမက ဆော့ဖ်ဝဲ ရေးသာသူဖြစ်ရင် ခြေလှမ်း စလှမ်းနေပြီဟုပင်ဆိုနိုင်ပါသည်။
+                    </span>
                 </div>
-                <!-- III -->
-                <div class="box swiper-slide">
-                    <div class="image">
-                        <img src="image/Courses/webdevwithphp.png" alt="">
-                    </div>
-                    <div class="content">
-                        <h3>APPLY WEB DEVELOPMENT WITH PHP</h3>
-                        <hr class="underline w-50 text-center" style="border: 2px solid red; margin-left: 25%;">
-                        <p>PHP သည် web development အတွက် အသုံးများသော server-side scripting language တစ်ခုဖြစ်ပြီး
-                            developer များသည် dynamic web pages များကို ဖန်တီးရန်၊ form data များကို ကိုင်တွယ်ရန်၊
-                            databases များနှင့် အပြန်အလှန် တုံ့ပြန်နိုင်ပြီး web applications များကို
-                            တည်ဆောက်နိုင်စေပါသည်။ Developer များကို ကြံ့ခိုင်ပြီး စွမ်းဆောင်မှုကြွယ်ဝသော
-                            ဝဘ်ဆိုက်များနှင့် ဝဘ်အက်ပလီကေးရှင်းများကို ဖန်တီးနိုင်စေပါသည်။</p>
-                        <div class="courseduration">
-
-                            <div class="row duration">
-                                <div class="col-6 text-center">
-                                    <h3>Duration</h3>
-                                    <i class="fas fa-clock"></i>
-                                    <span class="mx-2">3:00 Hours</span>
-                                </div>
-                                <div class="col-6 text-center">
-                                    <h3>Courses</h3>
-                                    <i class="fas fa-video"></i>
-                                    <span class="mx-2">24 Videos</span>
-                                </div>
-                            </div>
-                            <a class="btn btn-outline-danger">Learn Now</a>
-                        </div>
-                    </div>
+              </div>
+            </div>
+            <div class="accordion-item QandA">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    <i class="fa-solid fa-bookmark mx-3"></i> <span>Web developer တစ်ယောက်ရဲ့ ပျမ်းမျှလစာက ဘယ်လောက်လဲ။</span>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse QandA-content">
+                <div class="accordion-body">
+                  <i class="fa-solid fa-message" style="box-shadow: 0 0 30px red;"></i>
+                  <span class="text-start">ပျမ်းမျှအားဖြင့် အတွေ့အကြုံ 1-3 နှစ်ရှိ အငယ်တန်း web developer သည် တစ်လလျှင် ကျပ် 500,000 မှ ကျပ် 1,500,000 ဝန်းကျင်ရရှိရန် မျှော်လင့်နိုင်သည်။ အတွေ့အကြုံ 3-5 နှစ်ရှိ အလယ်အလတ်တန်းစား ဝဘ်ဆော့ဖ်ဝဲရေးသားသူများသည် တစ်လလျှင် ကျပ် 1,500,000 မှ ကျပ် 3,500,000 ကြား ရရှိနိုင်သည်။ အတွေ့အကြုံ 5 နှစ်နှင့်အထက်ရှိသော အကြီးတန်းဝဘ်ဆော့ဖ်ဝဲရေးသားသူများသည် တစ်လလျှင် ကျပ် 3,500,000 အထက်ရရှိနိုင်ပါသည်။
+                  </span>
                 </div>
-                <!-- IV -->
-                <div class="box swiper-slide">
-                    <div class="image">
-                        <img src="image/Courses/webdevwithjava.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <h3>APPLY WEB DEVELOPMENT WITH JAVA</h3>
-                        <hr class="underline w-50 text-center" style="border: 2px solid red; margin-left: 25%;">
-                        <p>Java သည် ၎င်း၏ ခိုင်မာသောအသိုင်းအဝိုင်းပံ့ပိုးမှုတို့အတွက် လူသိများသော
-                            စွယ်စုံသုံးပရိုဂရမ်ဘာသာစကားဖြစ်ပြီး ၎င်းသည် ဝဘ်ဖွံ့ဖြိုးတိုးတက်မှု၊
-                            မိုဘိုင်းအက်ပ်ဖွံ့ဖြိုးတိုးတက်မှု၊ လုပ်ငန်းဆော့ဖ်ဝဲအပါအဝင်
-                            ကျယ်ပြန့်သောအက်ပ်လီကေးရှင်းများအတွက် သင့်လျော်စေသည်။ Developer များအား လုံခြုံပြီး
-                            စွမ်းဆောင်ရည်မြင့်မားသော အက်ပ်လီကေးရှင်းအမျိုးမျိုးကို တည်ဆောက်နိုင်စေသည့်
-                            အားကောင်းမောင်းသန်သော ပရိုဂရမ်ဘာသာစကားတစ်ခုဖြစ်သည်။</p>
-                        <div class="courseduration">
-
-                            <div class="row duration">
-                                <div class="col-6 text-center">
-                                    <h3>Duration</h3>
-                                    <i class="fas fa-clock"></i>
-                                    <span class="mx-2">3:00 Hours</span>
-                                </div>
-                                <div class="col-6 text-center">
-                                    <h3>Courses</h3>
-                                    <i class="fas fa-video"></i>
-                                    <span class="mx-2">24 Videos</span>
-                                </div>
-                            </div>
-                            <a class="btn btn-outline-danger">Learn Now</a>
-                        </div>
-                    </div>
-                </div>
-                 <!-- V -->
-                <div class="box-continue swiper-slide">
-                    <div>
-                        <span>
-                            <i class="fas fa-add fa-10x"></i>
-                        </span>
-                    </div>
-                    <h3>Comming soon</h3>
+              </div>
+            </div>
+            <div class="accordion-item QandA">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                    <i class="fa-solid fa-bookmark mx-3"></i> <span>ဒီအွန်လိုင်းသင်ခန်းစာယူပြီးရင် ဘာလုပ်နိုင်မလဲ။</span>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse QandA-content">
+                  <div class="accordion-body">
+                    <i class="fa-solid fa-message" style="box-shadow: 0 0 30px red;"></i>
+                    <span class="text-start">
+                        ဤသင်တန်းပြီးပါက သင့်တွင် Freelancer သို့မဟုတ် ၎င်းတို့ကို အထင်ကြီးစေမည့် ပရောဂျက်များရှိနေလျှင် ကုမ္ပဏီတစ်ခုအောက်တွင် အလုပ်လုပ်နိုင်သည်။
+                    </span>
+                  </div>
                 </div>
             </div>
-            <!-- next or prev icon start-->
-            <div class="color">
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
-            <!-- next ore prev icon end -->
         </div>
-    </div>    
-            <!-- Course section end -->
+        <!-- Q & A section end -->
 
-            <!-- Live streamming Section -->
 
-            <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-            <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.js"></script>
-            <script src="fontawesome-free-6.4.0-web/js/all.min.js"></script>
-            <script src="JQuery/jquery.min.js"></script>
-            <script src="script/plugin.js"></script>
+        <!-- Footer section start -->
+        <div class="container-fluid footersection">
+            <div class="row footer">
+                <div class="col-3 box">
+                    <h3>Quick Link</h3>
+                            <a href="" class="text-start ms-5"><i class="fas fa-arrow-right me-3"></i>Home</a>
+                            <a href="" class="text-start ms-5"><i class="fas fa-arrow-right me-3"></i>Courses</a>
+                            <a href="" class="text-start ms-5"><i class="fas fa-arrow-right me-3"></i>About</a>
+                            <a href="" class="text-start ms-5"><i class="fas fa-arrow-right me-3"></i>Contact</a>
+                            <a href="" class="text-start ms-5"><i class="fas fa-arrow-right me-3"></i>Learn more</a>
+                </div>
+                <div class="col-3 box">
+                    <h3>Cookie</h3>
+                            <a href="" class="text-start ms-5"><i class="fas fa-arrow-right mx-2 col-1"></i>Terms</a>
+                            <a href="" class="text-start ms-5"><i class="fas fa-arrow-right mx-2 col-1"></i>Privacy Policy</a>
+                            <a href="" class="text-start ms-5"><i class="fas fa-arrow-right mx-2 col-1"></i>Cookie settings</a>
+                            <a href="" class="text-start ms-5"><i class="fas fa-arrow-right mx-2 col-1"></i>Sitemap</a>
+                            <a href="" class="text-start ms-5"><i class="fas fa-arrow-right mx-2 col-1"></i>Accessibility statement</a>
+                </div>
+                <div class="col-3 box">
+                    <h3>Contact Info</h3>
+                            <a href="" class="text-start ms-5"><i class="fas fa-phone col-1"></i><span>+959 123 456 789</span></a>
+                            <a href="" class="text-start ms-5"><i class="fas fa-phone col-1"></i><span>+013 1223 445</span></a>
+                            <a href="" class="text-start ms-5"><i class="fas fa-phone col-1"></i><span>+959 987 654 321</span></a>
+                            <a href="" class="text-start ms-5"><i class="fas fa-envelope col-1"></i><span>Heinlearn@gmail.com</span></a>
+                            <a href="" class="text-start ms-5"><i class="fas fa-earth col-1"></i><span>www.heinlearn.coms</span></a>
+                </div>
+                <div class="box col-3 text-start">
+                    <h3>For latest info</h3>
+                    <p class="text-light">Sumbit you email here</p>
+                    <input type="text" class="p-1 rounded-3"><button class="btn btn-outline-danger">Sumbit</button>
+                </div>
+            </div>
+        </div>
+        <!-- Footer section end -->
+
+        <div class="container">
+            Created by <span> Isaac </span> | all rights reserved !
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.js"></script>
+        <script src="fontawesome-free-6.4.0-web/js/all.min.js"></script>
+        <script src="JQuery/jquery.min.js"></script>
+        <script src="script/plugin.js"></script>
+        <script src="script/script.js"></script>
 </body>
 
 </html>

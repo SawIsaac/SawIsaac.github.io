@@ -201,6 +201,11 @@ body{
     color: #fefefe;
 }
 
+.side-bar .side-bar-navigation a:hover{
+    margin-left: 3rem;
+    color: red;
+}
+
     /* SIDE-BAR NAVIGATION END */
 
     /* Tag line start */
@@ -318,55 +323,31 @@ body{
     /* bunner end */
     
     /* Programming language slider start */
-.logo-slider{
-    height: 250px;
-    margin: auto;
-    position: relative;
-    width: 90%;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
+.logoslider-parent{
+    text-align: center;
+    padding-top: 50px;
 }
 
-.logo-slider .slider-track{
-    display: flex;
-    width: calc(250px *18);
-    animation: scroll 10s linear infinite;
+.logoslider-parent h1{
+    color: #f1f1f1;
+    font-family: neo;
 }
-      
-.logo-slider .slider-track .slide{
-    height: 150px;
+
+.logoslider {
+    margin-top: 50px;
+}
+
+.swiper-slide {
+    display: flex;
+}
+
+.swiper-slide img {
+   
     width: 150px;
-    display: flex;
-    align-items: center;
-    padding: 15px;
+    height: 150px;
 }
 
-.logo-slider .slider-track .slide img{
-    width: 100%;
-}
-
-.logo-slider::before,
-.logo-slider::after{
-    background: linear-gradient(to right, rgba(255,255,255,1)0%),
-    rgba(255, 255, 255, 0)100%;
-    content: '';
-    height: 100%;
-    position: absolute;
-    width: 15%;
-    z-index: 2;
-}
-
-@keyframes scroll {
-    0%{
-        transform: translateX(0);
-    }
-    100%{
-        transform: translateX(calc(-250px*9));
-    }
-    
-}
-      
+  
     /* Programming language slider end */
 
 
@@ -383,7 +364,7 @@ body{
 
     /* Comming soon start */
 .courses-parent .courses-slider .swiper-wrapper .box-continue{
-    height: 665px;
+    height: 648px;
     border: 1px solid #f1f1f1;
     position: relative;
     border-radius: 10px;
@@ -490,12 +471,6 @@ body{
     color: #f1f1f1;
 }
 
-.courses-parent .courses-slider .swiper-wrapper .box .content .courseduration a{
-    color: red;
-    margin: 1rem 0 1rem 230px;
-    padding: 1rem;
-}
-
 .courses-parent .courses-slider .swiper-wrapper .box .content .courseduration a:hover{
     color: white;
     background: red;
@@ -506,4 +481,107 @@ body{
 }
 
     /* Course Section end */
-    /* Live streamming section start */
+    /* partnership section start */
+.partnership{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.partnership .partner{
+    
+}
+
+.partnership .partner .box{
+    
+}
+
+.partnership .partner .box .partner-image{
+    overflow: hidden;
+   
+}
+
+.partnership .partner .box .partner-image img{
+    transition: .7s;
+}
+
+.partnership .partner .box .partner-image:hover img{
+    transform: scale(1.1);
+    transition: .7s;
+}
+
+.partnership .partner .box h3{
+    color: white;
+    font-size: 2rem;
+}
+
+.partnership .partner .box p{
+    color: #f1f1f1;
+    font-size: 1.1rem;
+}
+    /* partnership section end */
+
+    /* Q & A section start */
+.QandA-parent{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.QandA-parent h1{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.QandA-parent .QandA{
+    background: #0d0d0d;
+    border: .5rem solid #0d0d0d;
+}
+    
+.QandA-parent .QandA h2 button{
+    color: red;
+    background: #0d0d0d;
+}
+
+.QandA-parent .QandA h2 button span{
+    color: white;
+}
+
+.QandA-parent .QandA-content{
+    color: #fefefe;
+    border: 0 1px 1px 1px solid #f1f1f1;
+    box-shadow: 0 0 30px red;
+}
+
+.QandA-parent .QandA-content span{
+    text-align: center;
+    color: #f1f1f1;
+}
+    /* Q & A section END */
+
+    /* Footer section start */
+.footersection{
+    padding: 50px;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    margin-top: 100px;
+}
+
+.footersection .footer .box h3{
+    font-size: 2rem;
+    color: white;
+    font-family: eves;
+}
+
+.footersection .footer .box a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: .5rem 0;
+}
+
+.footersection .footer .box a:hover{
+    padding-left: .3rem;
+    color: red;
+}
+
+    /* Footer section end */
